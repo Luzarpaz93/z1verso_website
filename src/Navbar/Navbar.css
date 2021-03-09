@@ -1,11 +1,23 @@
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%);
-  
+    /*background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%);*/
+    background: black;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+}
+.iconLogo{
+    width: 30px;
+    height: 40px;
+    margin-top: 13px;
+    margin-left: 300px;
+}
+
+.Navbar {
+    /*background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%);*/
+    background: black;
+    
 }
 
 .navbar-logo {
@@ -67,7 +79,49 @@
     display: none;
 }
 
+
+.redes{
+    margin: 10px;
+    background: #FD4E5A;
+    padding: 9px 11px;
+    border-radius: 100%;
+    color: black;
+  }
+
+
+  .redesy{
+    margin: 10px;
+    background: #FD4E5A;
+    padding: 9px 10px;
+    border-radius: 100%;
+    color: black;
+  }
+
+  .iconos{
+    float: right;
+    margin-right: 500px;
+  }
+
+  .margenNavBAR{
+    padding: 0 25px;
+  }
+
+  .navbarcenter{
+      margin-left: 412px;
+  }
+
 @media screen and (max-width: 960px) {
+
+    .iconLogo{
+        margin-left: 0;
+    }
+
+    .contenedorImagenes {
+        margin: auto;
+        text-align: center;
+        float: none;
+        margin-top: 20px;
+    }
     .NavbarItems {
         position: relative;
     }

@@ -3,7 +3,7 @@ import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import { Home, About, Contact } from './pages';
+import { Home, Gaming, Creative,Business } from './pages';
 import Navbar from './Navbar/Navbar';
 import Sidebar from './Navbar/Sidebar'
 
@@ -16,11 +16,14 @@ function App() {
       <Navbar/>
  
       <Switch>
-        <Route path="/about">
-         
+        <Route path="/creative">
+         <Creative/>
         </Route>
-        <Route path="/users">
-        
+        <Route path="/business">
+         <Business/>
+        </Route>
+        <Route path="/gaming">
+          <Gaming/>
         </Route>
         <Route path="/">
           <Home />

@@ -4,7 +4,7 @@ import './Navbar.css'
 import "../Social/Social";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
-
+import logo from '../Imagenes/logo2.png';
 import SocialFlow from "../Social/Social";
 
 
@@ -28,24 +28,36 @@ class Navbar extends Component {
         return(
          <div>
            
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+  <nav >
+    <div class="nav-wrapper Navbar">
+      
+      <a href="#!" class="brand-logo">  <img src={logo}   className="iconLogo"/></a>
+      
+
+  
+      
       <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+      <ul class="left hide-on-med-and-down navbarcenter">
+    
+        <li className="margenNavBAR"><a href="/">HOME</a></li>
+        <li className="margenNavBAR"><a href="/gaming">GAMING</a></li>
+        <li className="margenNavBAR"><a href="/business">BUSINESS</a></li>
+        <li className="margenNavBAR"><a href="/creative">CREATIVE</a></li>
       </ul>
+      <div className="iconos">
+      <SocialFlow/>
+      </div>
+ 
     </div>
+    
+   
   </nav>
 
   <ul className="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/gaming">GAMING</a></li>
+        <li><a href="/business">BUSINESS</a></li>
+        <li><a href="/creative">CREATIVE</a></li>
   </ul>
          </div>
             

@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from '../Imagenes/logo2.png';
 import '../pages/home.css'
+import derecha1 from '../Imagenes/derecha1.png';
+import derecha2 from '../Imagenes/derecha2.png';
+import derecha3 from '../Imagenes/derecha3.png';
+
 
 const Home = ()=>{
     return (
@@ -8,7 +12,8 @@ const Home = ()=>{
         <div class="col s12 m8 l8">
 
         <div className="contenedorcentral">
-            <img className="imagenLogo" />
+     
+            <img src={logo}   className="imagenLogo"/>
               <br/>
               <p className="textoCenter">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -26,7 +31,26 @@ const Home = ()=>{
 
 
         </div>
-        <div class="col s12 m4 l4"><p>s12 m6 l3</p></div>
+        <div class="col s12 m4 l4">
+
+            <div class="contenedorImagenes">
+              
+                <div class="row">
+                  <img src={derecha1}   className="imagenDerecha1"/>
+                </div>
+
+                <div class="row">
+                <img src={derecha2}   className="imagenDerecha2"/>
+                </div>
+
+                <div class="row">
+                <img src={derecha3}   className="imagenDerecha3"/>
+                </div>
+            </div>
+
+       
+
+        </div>
        
       </div>
 
