@@ -1,4 +1,4 @@
-import React, { Component,Button } from 'react';
+import React, { Component,Button,Link } from 'react';
 import { MenuItems } from "./MenuItems"
 import './Navbar.css'
 import "../Social/Social";
@@ -54,10 +54,10 @@ class Navbar extends Component {
   </nav>
 
   <ul className="sidenav" id="mobile-demo">
-        <li><a href="/">HOME</a></li>
-        <li><a href="/gaming">GAMING</a></li>
-        <li><a href="/business">BUSINESS</a></li>
-        <li><a href="/creative">CREATIVE</a></li>
+  <li className="margenNavBAR"><a href="/">HOME</a></li>
+        <li className="margenNavBAR"><a href="/gaming">GAMING</a></li>
+        <li className="margenNavBAR"><a href="/business">BUSINESS</a></li>
+        <li className="margenNavBAR"><a href="/creative">CREATIVE</a></li>
   </ul>
          </div>
             

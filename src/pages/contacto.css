@@ -1,0 +1,103 @@
+.titlecontacto{
+    color: white;
+}
+
+.caja{
+    width: 398px;
+    height: 44px;
+    left: 224px;
+    top: 306px;
+    background: #031B2F;
+    border: 1px solid #FD4E5A !important;
+    box-sizing: border-box i !important;
+    border-radius: 9px  !important;
+    color: white;
+}
+
+.titulocaja{
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    color: #FFFFFF;
+}
+
+.titulocontactanos{
+    text-align: left;
+    margin-top: 152px;
+    color: white;
+    text-decoration: underline;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 63px;
+    float: left;
+
+}
+
+.redesspan {
+    margin: 10px;
+    background: #FD4E5A;
+    padding: 5px 5px;
+    border-radius: 100%;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    width: 40px;
+}
+
+.textoform{
+
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    float: left !important;
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.fondoform{
+    width: 80%;
+    border: 4px solid white;
+    border-radius: 16px;
+    background: black;
+    margin-top: 30px;
+}
+
+.btnEnviar{
+
+
+font-family: Saira;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+background: linear-gradient(74.11deg, #FD4E5A 31.66%, #82799E 108.98%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+transform: rotate(-90deg);
+color: #FFFFFF;
+padding: 5px 60px;
+}
+
+
+.cajamensaje{
+
+    height: 120px;
+    left: 224px;
+    top: 306px;
+    background: #031B2F;
+    border: 1px solid #FD4E5A !important;
+    box-sizing: border-box i !important;
+    border-radius: 9px  !important;
+    color: white;
+}

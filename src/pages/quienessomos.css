@@ -1,0 +1,54 @@
+.texto{
+    color: white;
+}
+
+
+.imagenLogosomos{
+    
+    width: 456px;
+    height: 382px;
+    left: 155px;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 100px;
+}
+
+h1{
+    color: white;
+    text-decoration: underline ;
+}
+
+.textoSomos{
+    text-align: center;
+    margin-top: 152px;
+    color: white;
+    text-decoration: underline ;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 63px;
+    text-align: center;
+}
+
+.textoCenterSomos{
+
+    left: 659px;
+    top: 445px;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    width: 616px;
+    margin: auto;
+}
+
+.contenedorsomos{
+    text-align: center;
+}

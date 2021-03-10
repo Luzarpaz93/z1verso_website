@@ -6,7 +6,11 @@ import derecha2 from '../Imagenes/derecha2.png';
 import derecha3 from '../Imagenes/derecha3.png';
 
 
+
 const Home = ()=>{
+
+
+
     return (
       <div class="row">
         <div class="col s12 m8 l8">
@@ -22,7 +26,8 @@ const Home = ()=>{
               </p>
               <br/>
 
-              <button className="boton" >Conoce más</button>
+               
+               <a href="/conocemas"  class="boton">Conoce más</a>
               <br/>
               <p className="flecha"></p>
         </div>

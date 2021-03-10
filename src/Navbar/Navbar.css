@@ -111,7 +111,9 @@
   }
 
 @media screen and (max-width: 960px) {
-
+body {
+    overflow-y: scroll;
+}
     .iconLogo{
         margin-left: 0;
     }

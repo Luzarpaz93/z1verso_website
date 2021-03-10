@@ -1,0 +1,45 @@
+.mejora{
+    font-family: Saira;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 63px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.mejoraArmado{
+    font-family: Saira;
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 76px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.logoderecha{
+
+    margin-top: 183px;
+}
+
+.botonQuien{
+    float: right;
+    margin-right: -100px;
+    width: 257px;
+    text-align: center;
+}
+
+.flechaMejora{
+    width: 48px;
+    height: 48px;
+    margin-top: 80px !important;
+    background-image: url("../Imagenes/hacia-abajo.png");
+    background-repeat: no-repeat;
+    margin: auto;
+    float: right;
+    margin-right: -150px;
+
+}
