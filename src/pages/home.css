@@ -111,7 +111,7 @@
     border-radius: 15px;
 }
 
-.contenedorImagenes{
+.contenedorImagenesHome{
     text-align: center;
     float: right;
     margin-top: -70px;
@@ -132,4 +132,16 @@ img{border:none;
 
 
 
- 
+@media screen and (max-width: 960px) {
+    .contenedorImagenesHome{
+        margin: auto;
+        text-align: center;
+        float: none;
+        margin-top: 20px;
+    }
+
+    #header {
+        display: none;
+      }
+   
+}

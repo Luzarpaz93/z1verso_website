@@ -86,7 +86,7 @@ const Contacto = ()=>{
 
 
 
-<div class="col s12 m6 l6">
+            <div class="col s12 m6 l6">
 
 <form>
 <div class="row">
@@ -144,7 +144,7 @@ const Contacto = ()=>{
         
         </li>
     </ul>
-    
+    {/*
       <br/>
       <br/>
       <br/>
@@ -161,6 +161,9 @@ const Contacto = ()=>{
       <br/> 
       <br/> 
       <br/> 
+       */}
+
+       <div className="divisor"></div>
        <a href="#"  class="btnEnviar">Enviar</a>
     
     </div>

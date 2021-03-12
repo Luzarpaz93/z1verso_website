@@ -38,7 +38,7 @@ const Home = ()=>{
         </div>
         <div class="col s12 m4 l4">
 
-            <div class="contenedorImagenes">
+            <div class="contenedorImagenesHome">
               
                 <div class="row">
                   <img src={derecha1}   className="imagenDerecha1"/>

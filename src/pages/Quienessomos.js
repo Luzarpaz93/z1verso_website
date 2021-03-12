@@ -7,8 +7,8 @@ const Quienessomos = ()=>{
         <div class="row">
      
   
-          <div class="col s12 m4 l4">
-          <div className="contenedorcentral">
+          <div class="col s12 m2 l2">
+          <div className="contenedorcentralsomos">
        
               <img src={izquierda}  className="imagenLogosomos"/>
                
@@ -19,7 +19,7 @@ const Quienessomos = ()=>{
   
   
           </div>
-          <div class="col s12 m8 l8" >
+          <div class="col s12 m10 l10" >
             <div className="contenedorsomos">
              
               <p className="textoSomos">

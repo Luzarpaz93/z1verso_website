@@ -101,3 +101,30 @@ padding: 5px 60px;
     border-radius: 9px  !important;
     color: white;
 }
+
+.divisor{
+    height: 350px;
+}
+
+@media screen and (max-width: 960px) {
+    .titulocontactanos {
+      margin-top: -150px;
+    }
+
+    .textoform {
+        display: none;
+    }
+    .redesspan {
+        display: none;
+    }
+
+    .btnEnviar{
+        text-align: center;
+        margin: auto;
+        margin-left: 80px;  
+    }
+    .divisor{
+        height: 0px;
+    }
+   
+}

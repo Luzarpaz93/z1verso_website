@@ -9,12 +9,13 @@ import Header from './sideBar/Header';
 import Sidebar from './Navbar/Sidebar'
 
 
+
 function App() {
   return (
  
     <Router>
     <div>
-    <Header />
+      <Header />
       <Navbar/>
  
       <Switch>

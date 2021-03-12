@@ -43,3 +43,43 @@ color: #FFFFFF;
     margin-right: -150px;
 
 }
+
+.textoSomosmejora{
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+    text-decoration: underline;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 63px;
+    text-align: center;
+}
+
+.logoderechaMejora{
+    margin-top: 183px;
+}
+
+@media screen and (max-width: 960px) {
+    .textoSomosmejora {
+       margin-top: -200px;
+    }
+   
+    .botonQuien {
+        margin: auto;
+        margin-right: 107px;
+    }
+
+    .logoderechaMejora {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .contenedorImagenesMejora {
+        margin: auto;
+        text-align: center;
+        float: none;
+        margin-top: 50px;
+    }
+}

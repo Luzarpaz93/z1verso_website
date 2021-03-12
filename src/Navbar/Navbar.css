@@ -117,6 +117,15 @@ body {
     .iconLogo{
         margin-left: 0;
     }
+    .left-btn{
+        background: linear-gradient(#F14F5C, #193349) !important;
+    }
+    .sidenav li>a {
+        color: white !important;
+    }
+    .menu1{
+        background: linear-gradient(#F14F5C, #193349) !important;
+    }
 
     .contenedorImagenes {
         margin: auto;

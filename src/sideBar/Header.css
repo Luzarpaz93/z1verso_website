@@ -64,9 +64,9 @@
   }
   
   @media only screen and (max-width: 720px) {
-    html {
+    /*html {
       overflow: hidden;
-    }
+    }*/
   }
 
   .encabezadoMenu{
@@ -101,3 +101,5 @@
   .textohrf{
     color: white !important;
   }
+
+ 

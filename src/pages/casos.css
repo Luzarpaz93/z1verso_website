@@ -30,3 +30,21 @@
 .tama{
     margin-top: 50px;
 }
+
+
+@media screen and (max-width: 960px) {
+    .textoCentercasos {
+    
+        width: 70%;
+       
+    }
+
+    .tama{
+        margin-top: -200px;
+    }
+
+    .textocasos {
+        margin-top: -50px;
+    }
+   
+}

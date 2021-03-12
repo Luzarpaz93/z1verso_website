@@ -15,7 +15,7 @@ const Mejoratuequipo = ()=>{
       <div class="row">
         <div class="col s12 m6 l6">
 
-             <p className="textoSomos">
+             <p className="textoSomosmejora">
                 Lo que hacemos
               </p>
 
@@ -35,7 +35,7 @@ const Mejoratuequipo = ()=>{
         </div>
         <div class="col s12 m2 l4">
           
-          <div className ="logoderecha">
+          <div className ="logoderechaMejora">
             <img src={logo}   className="imagenLogo"/>
                
            
@@ -44,7 +44,7 @@ const Mejoratuequipo = ()=>{
         </div>
         <div class="col s12 m4 l2">
 
-            <div class="contenedorImagenes">
+            <div class="contenedorImagenesMejora">
               
                 <div class="row">
                   <img src={derecha1}   className="imagenDerecha1"/>
