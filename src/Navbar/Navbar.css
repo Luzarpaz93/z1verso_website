@@ -215,3 +215,33 @@ body {
     }
 }
 
+
+@media only screen and (min-width: 768px) {
+    .iconLogo {
+    
+        margin-left: 140px;
+    }
+
+    .navbarcenter{
+        margin-left: 212px;
+    }
+
+    .margenRedes{
+        position: absolute  !important;
+        right: 30%;
+    }
+
+    .redes {
+        margin: 5px;
+       
+    }
+
+    .redesy {
+        margin: 5px;
+    }
+
+    .margenNavBAR{
+        padding: 0 15px;
+      }
+  }
+

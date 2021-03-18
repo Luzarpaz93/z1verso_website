@@ -13,7 +13,7 @@ export default function SocialFlow() {
   return (
     <div>
 
-      <div className="social-container">
+      <div className="social-container margenRedes">
         {/*Whatsapp */}
       <a
           href="https://wwww.twitter.com"

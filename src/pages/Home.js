@@ -19,7 +19,7 @@ const Home = ()=>{
      
             <img src={logo}   className="imagenLogo"/>
               <br/>
-              <p className="textoCenter">
+        <p className="textoCenter">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -29,7 +29,7 @@ const Home = ()=>{
                
                <a href="/conocemas"  class="boton">Conoce más</a>
               <br/>
-              <p className="flecha"></p>
+              <p className="flecha"></p> *
         </div>
             
          
@@ -39,24 +39,44 @@ const Home = ()=>{
         <div class="col s12 m4 l4">
 
             <div class="contenedorImagenesHome">
+
               
-                <div class="row">
-                  <img src={derecha1}   className="imagenDerecha1"/>
+                  <table className="tablita">
+                    
+
+                    <tbody>
+                      <tr>
+                        <td> <img src={derecha1} class="responsive-img"  className="imagenDerecha1"/></td>
+                      
+                      </tr>
+                      <tr>
+                        <td> <img src={derecha2} class="responsive-img"   className="imagenDerecha2"/></td>
+                    
+                      </tr>
+                      <tr>
+                        <td> <img src={derecha3} class="responsive-img"  className="imagenDerecha3"/></td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+              
+                {/* <div class="row">
+                
+                </div>
+
+              
+                 <div class="row">
+                 
                 </div>
 
                 <div class="row">
-                <img src={derecha2}   className="imagenDerecha2"/>
-                </div>
-
-                <div class="row">
-                <img src={derecha3}   className="imagenDerecha3"/>
-                </div>
+                 
+                </div>  */}
             </div>
-
-       
-
         </div>
        
+    
+
       </div>
 
       )

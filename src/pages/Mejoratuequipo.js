@@ -29,6 +29,7 @@ const Mejoratuequipo = ()=>{
                 Armado a la medida
               </p>
 
+          
               <a href="/quienessomos"  class="boton botonQuien">Quiénes somos</a>
               <br/>
               <p className="flechaMejora"></p>

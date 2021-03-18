@@ -83,3 +83,10 @@ color: #FFFFFF;
         margin-top: 50px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+
+    .botonQuien {
+        margin-right: 50px;
+    }
+  }

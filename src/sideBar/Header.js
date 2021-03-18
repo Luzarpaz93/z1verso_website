@@ -76,7 +76,7 @@ const Header = () => {
               )}
            
           </SidebarContent>
-          <SidebarFooter>
+          <SidebarFooter className ="encabezadoMenuResize">
           <Menu className ="encabezadoMenu">
               <MenuItem icon={<FiMail />}>
               &nbsp;&nbsp;
