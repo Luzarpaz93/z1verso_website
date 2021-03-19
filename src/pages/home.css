@@ -10,33 +10,41 @@
 
 
 .imagenDerecha1{
-    width: 381.92px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 10px;
+    width: 360.92px;
 
     left: 1083.19px;
     top: -2.95px;
-    margin: -26px;
+    background-repeat: round;
+    
     transition: transform .2s; 
 }
 
 .imagenDerecha2{
-    
-    width: 381.92px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 10px;
+    width: 360.92px;
 
     left: 1083.19px;
     top: -2.95px;
     background-repeat: round;
-    margin: -26px;
+    
     transition: transform .2s; 
 }
 
 .imagenDerecha3{
-    
-    width: 381.92px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 10px;
+    width: 360.92px;
 
     left: 1083.19px;
     top: -2.95px;
     background-repeat: round;
-    margin: -26px;
+    /*margin: -26px;*/
     transition: transform .2s; 
 }
 
@@ -56,6 +64,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     color: #fff;
+    transition: transform .2s;
+}
+
+.boton:hover{
+    transform: scale(1.175);
 }
 
 .textoCenter{
@@ -114,7 +127,7 @@
 .contenedorImagenesHome{
     text-align: center;
     float: right;
-    margin-top: -70px;
+    margin-top: 0px;
     z-index: 999999;
     position: relative;
 }
@@ -167,8 +180,19 @@ img{border:none;
        right: 0%;
        margin-top: 10px;
        margin-right: 10px;
+       height: 900px;
+   }
+
+   .tablita > .carousel{
+       height: 100%;
    }
 
 }
 
+button.control-arrow.control-next.control-disabled{
+    display: none;
+}
 
+button.control-arrow.control-prev.control-disabled{
+    display: none;
+}
