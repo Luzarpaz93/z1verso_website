@@ -54,23 +54,14 @@ const Home = ()=>{
               <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
               <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
               <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
-<<<<<<< HEAD
+
 
               <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
               <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
               <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
               
-=======
-              <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
-              <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
-              <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
-              <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
-              <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
-              <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
-              <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
-              <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
-              <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
->>>>>>> d08fe196c7278e9410436d37b7ebaadfff94f8c9
+
+
             </Carousel>
                   
             </div>
