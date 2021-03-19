@@ -37,7 +37,7 @@ const Mejoratuequipo = ()=>{
         <div class="col s12 m2 l4">
           
           <div className ="logoderechaMejora">
-            <img src={logo}   className="imagenLogo"/>
+            <img src={logo}   className="imagenLogoMejora"/>
                
            
           </div>
