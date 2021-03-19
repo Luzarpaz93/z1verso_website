@@ -34,21 +34,31 @@ const Home = ()=>{
         <div className="col s12 m4 l4">
 
             <div className="contenedorImagenesHome">
-            <Carousel className="tablita" 
+            <Carousel className="tablita"
                       slidesPerPage={2}
                       slidesPerScroll={2}
+                      selectedItem={3} 
                       autoPlay={true} 
                       interval={3000} 
+                      transitionTime={500}
                       animationSpeed={1500}
                       showThumbs={false}
                       showStatus={false} 
                       showArrows={false} 
                       dynamicHeight={false} 
                       axis={'vertical'} 
-                      infinite
                       infiniteLoop={true}
                       offset={50}
                       stopOnHover={false}>
+              <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
+              <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
+              <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
+              <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
+              <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
+              <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
+              <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
+              <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
+              <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>
               <div className="imagenDerecha1 responsive-img"><img src={derecha1} /></div>
               <div className="imagenDerecha2 responsive-img"><img src={derecha2} /></div>
               <div className="imagenDerecha3 responsive-img"><img src={derecha3} /></div>

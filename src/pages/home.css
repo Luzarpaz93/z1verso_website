@@ -110,7 +110,15 @@
     background-image: url("../Imagenes/hacia-abajo.png");
     background-repeat: no-repeat;
     margin: auto;
+    transition: transform .2s;
+}
 
+.boton:hover + br + .flecha{
+    transform: scale(1.175);
+}
+
+.boton:hover + .flecha{
+    transform: scale(1.175);
 }
 
 .fondoHome{
@@ -180,13 +188,20 @@ img{border:none;
        right: 0%;
        margin-top: 10px;
        margin-right: 10px;
-       height: 900px;
+       height: 100vh;
    }
 
    .tablita > .carousel{
-       height: 100%;
+        top: 0%;
+        right: 0%;
+        margin-top: 10px;
+        margin-right: 10px;
+        height: 100vh;
    }
+}
 
+div.slider-wrapper.axis-vertical {
+    height: 100%;
 }
 
 button.control-arrow.control-next.control-disabled{
