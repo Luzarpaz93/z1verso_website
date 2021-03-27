@@ -1,0 +1,62 @@
+.botonGaming{
+    display: inline-block  !important;
+    padding: 15px 40px;
+    border: none;
+    left: 525px;
+    top: 714px;
+    background: linear-gradient(74.11deg, #81212E 31.66%, #F1071A 108.98%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #fff;
+    transition: transform .2s;
+    font-size: 24px;
+}
+
+.botonGaming:hover{
+    transform: scale(1.175);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.botonGaming:hover + br + .flecha{
+    transform: scale(1.175);
+}
+
+.contenedorcentralGaming{
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.imagenLogoGaming{
+    
+    width: 218px;
+    height: 287px;
+    left: 527px;
+    top: 137px;
+    margin-top: 137px;
+ 
+}
+.textoCenterGaming {
+    left: 323px;
+    top: 445px;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+
+    #header2 {
+        display: none;
+      }
+
+      .imagenLogoGaming{
+        margin-top: -200px;
+    }
+}

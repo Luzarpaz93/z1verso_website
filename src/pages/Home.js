@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState,useEffect  } from 'react';
 import logo from '../Imagenes/logo2.png';
 import '../pages/home.css'
 import derecha1 from '../Imagenes/derecha1.png';
@@ -9,6 +9,15 @@ import { Carousel } from "react-responsive-carousel";
 
 
 const Home = ()=>{
+
+  useEffect(() => {
+    localStorage.clear();
+    localStorage.setItem('seleccion', "home")
+
+  });
+
+
+
     return (
       <div className="row">
         <div className="col s8 m10 l10">

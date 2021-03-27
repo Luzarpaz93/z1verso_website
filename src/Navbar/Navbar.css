@@ -88,10 +88,26 @@
     color: black;
   }
 
+  .redes2{
+    margin: 10px;
+    background: white;
+    padding: 9px 11px;
+    border-radius: 100%;
+    color: black;
+  }
+
 
   .redesy{
     margin: 10px;
     background: #FD4E5A;
+    padding: 9px 10px;
+    border-radius: 100%;
+    color: black;
+  }
+  
+  .redesy2{
+    margin: 10px;
+    background: white;
     padding: 9px 10px;
     border-radius: 100%;
     color: black;
@@ -104,6 +120,7 @@
 
   .margenNavBAR{
     padding: 0 25px;
+    font-family: Saira;
   }
 
   .navbarcenter{
@@ -237,6 +254,15 @@ body {
     }
 
     .redesy {
+        margin: 5px;
+    }
+
+    .redes2 {
+        margin: 5px;
+       
+    }
+
+    .redesy2 {
         margin: 5px;
     }
 

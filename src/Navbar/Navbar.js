@@ -11,10 +11,21 @@ import homelateral from '../Imagenes/menuLateral.png';
 class Navbar extends Component {
     state = { clicked: false }
 
+
+    constructor(props) {
+      super(props);
+      this.state = {
+        bgColor: ""
+      }
+
+
+    }
+
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
 
     }
+
 
     
     componentDidMount() {
@@ -51,8 +62,8 @@ class Navbar extends Component {
       <ul class="left hide-on-med-and-down navbarcenter">
     
         <li className="margenNavBAR"><a href="/">HOME</a></li>
-        <li className="margenNavBAR"><a href="/gaming">GAMING</a></li>
-        <li className="margenNavBAR"><a href="/business">BUSINESS</a></li>
+        <li className="margenNavBAR"  ><a href="/gaming" >GAMING</a></li>
+        <li className="margenNavBAR"><a href="/business" >BUSINESS</a></li>
         <li className="margenNavBAR"><a href="/creative">CREATIVE</a></li>
       </ul>
       <div className="iconos">

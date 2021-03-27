@@ -1,6 +1,7 @@
 
 //import useState hook to create menu collapse state
-import React, { useState } from "react";
+import React, { useState,useEffect  } from "react";
+import { useLocation } from 'react-router-dom'
 
 //import react pro sidebar components
 import {
@@ -33,9 +34,14 @@ import "./Header.css";
 import homelateral from '../Imagenes/menuLateral.png';
 
 const Header = () => {
-  
+  const location = useLocation();
     //create initial menuCollapse state using useState hook
-    const [menuCollapse, setMenuCollapse] = useState(true)
+    const [menuCollapse, setMenuCollapse] = useState(true) 
+    const [name, setname] = useState('header')
+    const [ruta, setruta] = useState(location.pathname)
+
+
+    
 
     //create a custom function that will change menucollapse state from false to true and true to false
   const menuIconClick = () => {
@@ -43,11 +49,28 @@ const Header = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
+  useEffect(() => {
+    var guardado = localStorage.getItem('seleccion');
+   
+     if(ruta == "/"){
+      setname("header")
+    }else if(ruta == "/gaming"){
+        setname("header2")
+    }
+    else if(ruta == "/business"){
+      setname("header4")
+    }
+    else if(ruta == "/creative"){
+      setname("header3")
+    }
+
+ 
+  });
   return (
     <>
-      <div id="header">
+      <div id={name}>
           {/* collapsed props to change menu size using menucollapse state */}
-        <ProSidebar collapsed={menuCollapse}>
+        <ProSidebar collapsed={menuCollapse}  >
           <SidebarHeader>
           <div className="logotext">
               {/* small and big change using menucollapse state 

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState,useEffect  }  from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useLocation } from 'react-router-dom'
 import {
   faYoutube,
   faFacebook,
@@ -10,6 +11,31 @@ import {
 
 export default function SocialFlow() {
   
+  const location = useLocation();
+
+  const [ruta, setruta] = useState(location.pathname)
+  const [name, setname] = useState('redes')
+  const [name2, setname2] = useState('redesy')
+
+  useEffect(() => {
+     if(ruta == "/"){
+      setname("redes");
+      setname2("redesy");
+    }else if(ruta == "/gaming"){
+       setname("redes2");
+       setname2("redesy2");
+    }
+    else if(ruta == "/business"){
+      setname("redes2");
+      setname2("redesy2");
+    }
+    else if(ruta == "/creative"){
+      setname("redes2");
+      setname2("redesy2");
+    }
+  });
+
+
   return (
     <div>
 
@@ -17,7 +43,7 @@ export default function SocialFlow() {
         {/*Whatsapp */}
       <a
           href="https://wwww.twitter.com"
-          className="redes"
+          className={name}
         >
           <FontAwesomeIcon icon={faWhatsapp} size="1x"   />
         </a>
@@ -26,7 +52,7 @@ export default function SocialFlow() {
 
     <a
           href="https://wwww.twitter.com"
-          className="redes"
+          className={name}
         >
           <FontAwesomeIcon icon={faInstagram} size="1x"   />
         </a>
@@ -35,7 +61,7 @@ export default function SocialFlow() {
     {/*facebook */}
         <a
           href="https://www.facebook.com/learnbuildteach/"
-          className="redes"
+          className={name}
         >
           <FontAwesomeIcon icon={faFacebook} size="1x"  />
         </a>
@@ -44,7 +70,7 @@ export default function SocialFlow() {
 
     <a
           href="https://wwww.twitter.com"
-          className="redes"
+          className={name}
         >
           <FontAwesomeIcon icon={faTwitter} size="1x"   />
         </a>
@@ -55,7 +81,7 @@ export default function SocialFlow() {
 
         <a
           href="https://www.youtube.com/c/jamesqquick"
-          className="redesy"
+          className={name2}
         >
           <FontAwesomeIcon icon={faYoutube} size="1x"  />
         </a>

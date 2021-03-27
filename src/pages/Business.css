@@ -1,0 +1,57 @@
+.botonBusiness{
+    display: inline-block  !important;
+    padding: 15px 40px;
+    border: none;
+    left: 525px;
+    top: 714px;
+    background: linear-gradient(74.11deg, #245A6E 31.66%, #3092A9 108.98%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #fff;
+    transition: transform .2s;
+    font-size: 24px;
+}
+
+.botonBusiness:hover{
+    transform: scale(1.175);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.botonBusiness:hover + br + .flecha{
+    transform: scale(1.175);
+}
+
+
+.imagenLogoBusiness{
+    
+    width: 218px;
+    height: 287px;
+    left: 527px;
+    top: 137px;
+    margin-top: 137px;
+ 
+}
+.textoCenterBusiness {
+    left: 323px;
+    top: 445px;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 960px) {
+   
+    #header4 {
+        display: none;
+      }
+
+    .imagenLogoBusiness{
+        margin-top: -200px;     
+    }
+}
