@@ -73,8 +73,6 @@
 
 .textoCenter{
 
- 
-
     left: 323px;
     top: 445px;
     font-family: Saira;
@@ -150,12 +148,6 @@ img{border:none;
     
 }
 
-.tablita{
-  
-}
-
-
-
 @media screen and (max-width: 960px) {
     .contenedorImagenesHome{
         margin: auto;
@@ -167,15 +159,10 @@ img{border:none;
     #header {
         display: none;
       }
-   
-
       
 }
 
-
-@media only screen and (min-width: 768px) {
-
-
+@media only screen and (min-width: 768px){
     .seccion{
 
         height: auto;
@@ -184,8 +171,18 @@ img{border:none;
         margin-right: 15px;
         position: absolute;
     }
+}
 
-   .tablita{
+@media only screen and (min-width: 1198px) {
+    .seccion{
+        height: auto;
+        top: 0;
+        right: 0;
+        margin-right: 15px;
+        position: absolute;
+    }
+
+    .carousel-root.tablita{
        position: absolute;
        top: 0%;
        right: 0%;
@@ -194,13 +191,137 @@ img{border:none;
        height: 100vh;
    }
 
-   .tablita > .carousel{
+   .carousel-root.tablita > .carousel{
         top: 0%;
         right: 0%;
         margin-top: 10px;
         margin-right: 10px;
         height: 100vh;
    }
+}
+
+@media only screen and (min-width: 1088px) and (max-width: 1198px){
+    .carousel-root.tablita{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        margin-top: 10px;
+        margin-right: 10px;
+        height: 100vh;
+        width: 40vh;
+    }
+ 
+    .carousel-root.tablita > .carousel{
+         top: 0%;
+         right: 0%;
+         margin-top: 10px;
+         margin-right: 10px;
+         height: 100vh;
+         width: 40vh;
+    }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1088px){
+    .carousel-root.tablita{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        margin-top: 10px;
+        margin-right: 10px;
+        height: 120vh;
+        width: 40vh;
+    }
+ 
+    .carousel-root.tablita > .carousel{
+         top: 0%;
+         right: 0%;
+         margin-top: 10px;
+         margin-right: 10px;
+         height: 120vh;
+         width: 40vh;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .carousel-root.tablita{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        margin-top: 10px;
+        margin-right: 10px;
+        height: 120vh;
+        width: 30vh;
+    }
+ 
+    .carousel-root.tablita > .carousel{
+         top: 0%;
+         right: 0%;
+         margin-top: 10px;
+         margin-right: 10px;
+         height: 120vh;
+         width: 30vh;
+    }
+}
+
+@media all and (max-width: 690px) and (min-width: 530px){
+    .col.s8.m10.l10{
+        width: 100%;
+    }
+    .iconos{
+        margin-top: 60px;
+        position: absolute;
+    }
+}
+
+@media all and (max-width: 690px) and (min-width: 601px){
+    .carousel-root.tablita{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        right: 0%;
+        margin: 0 0 0 0;
+        height: 100vh;
+        width: 40vh;
+    }
+ 
+    .carousel-root.tablita > .carousel{
+         top: 0%;
+         left: 0%;
+         right: 0%;
+         margin: auto;
+         height: 120h;
+         width: 40vh;
+    }
+}
+
+@media all and (max-width: 601px){
+    .carousel-root.tablita{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        margin: auto;
+        height: 120vh;
+        width: 40vh;
+    }
+ 
+    .carousel-root.tablita > .carousel{
+         top: 0%;
+         left: 0%;
+         right: 0%;
+         margin: auto;
+         height: 120vh;
+         width: 40vh;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .col.s8.m10.l10{
+        width: 100%;
+    }
+    .iconos{
+        display: none;
+    } 
 }
 
 div.slider-wrapper.axis-vertical {
