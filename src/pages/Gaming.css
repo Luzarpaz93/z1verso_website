@@ -50,6 +50,16 @@
     color: #fff;
 }
 
+.tituloParrafo{
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 960px) {
 
     #header2 {

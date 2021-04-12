@@ -24,15 +24,17 @@ const Creative = ()=>{
       
               <img src={logo}   className="imagenLogoCreative"/>
               <br/>
+              <p className="tituloParrafo">
+               Armada para diseñar
+              </p>
               <p className="textoCenterCreative">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+               Personas que necesitan un rendimiento óptimo para edición  de audio, foto, video y cualquier tipo de renderizacion
+               en alta calidad. Este sector está dedicado para ti.
               </p>
               <br/>
 
               
-              <a href="/conocemas"  class="botonCreative">Cotizar</a>
+              <a href="/conocemas"  class="botonCreative">COTIZAR</a>
               <br/>
               <p className="flecha"></p> *
         </div>

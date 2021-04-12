@@ -51,7 +51,7 @@ export default function SocialFlow() {
     {/*Instagram */}
 
     <a
-          href="https://wwww.twitter.com"
+          href="https://www.instagram.com/z1verso/?hl=es-la"
           className={name}
         >
           <FontAwesomeIcon icon={faInstagram} size="1x"   />
@@ -69,7 +69,7 @@ export default function SocialFlow() {
     {/*Twitter */}
 
     <a
-          href="https://wwww.twitter.com"
+          href="https://twitter.com/z1verso "
           className={name}
         >
           <FontAwesomeIcon icon={faTwitter} size="1x"   />
@@ -80,7 +80,7 @@ export default function SocialFlow() {
     
 
         <a
-          href="https://www.youtube.com/c/jamesqquick"
+          href="https://www.youtube.com/channel/UClR1kRWEgq2dFkF-X4qwWmQ"
           className={name2}
         >
           <FontAwesomeIcon icon={faYoutube} size="1x"  />

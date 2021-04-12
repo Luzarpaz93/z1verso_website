@@ -26,15 +26,18 @@ const Business = ()=>{
         
                 <img src={logo}   className="imagenLogoBusiness"/>
                 <br/>
+                <p className="tituloParrafo">
+                  Armada para trabajar
+                </p>
                 <p className="textoCenterBusiness">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  Empresas y Pymes que busquen una experiencia
+                  óptima y especializada para las áreas  de sus 
+                  colaboradores. Este sector está dedicado para ustedes.
                 </p>
                 <br/>
 
                 
-                <a href="/conocemas"  class="botonBusiness">Cotizar</a>
+                <a href="/conocemas"  class="botonBusiness">COTIZAR</a>
                 <br/>
                 <p className="flecha"></p> *
           </div>
