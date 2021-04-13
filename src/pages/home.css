@@ -144,10 +144,45 @@
     
 }
 
+.vinoculares{
+    left: 527px;
+    top: 137px;
+    margin-top: 137px;
+}
+
+.cuete{
+    left: 527px;
+    top: 137px;
+    margin-top: 180px;
+}
+
 img{border:none;
      outline: none;
     
 }
+html {
+    scroll-behavior: smooth;
+   }
+
+
+.textoCenterValores{
+
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: justify;
+    color: #fff;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 
 @media screen and (max-width: 960px) {
     .contenedorImagenesHome{
