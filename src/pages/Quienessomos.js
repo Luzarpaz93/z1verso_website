@@ -4,13 +4,13 @@ import izquierda from '../Imagenes/izquierdasomos.png';
 
 const Quienessomos = ()=>{
     return (
-        <div class="row">
+        <div className="row somos-main-padding custom-flex">
      
   
-          <div class="col s12 m2 l2">
+          <div className="col s12 m5 l4">
           <div className="contenedorcentralsomos">
        
-              <img src={izquierda}  className="imagenLogosomos"/>
+              <img src={izquierda} className="imagenLogosomos"/>
                
                
           </div>
@@ -19,7 +19,7 @@ const Quienessomos = ()=>{
   
   
           </div>
-          <div class="col s12 m10 l10" >
+          <div class="col s12 m7 l8" >
             <div className="contenedorsomos">
              
               <p className="textoSomos">

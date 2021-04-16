@@ -9,6 +9,12 @@
  
 }
 
+.custom-slider-image{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 10px;
+    background-repeat: round;
+}
 
 .imagenDerecha1{
     margin-top: 10px !important;
@@ -43,13 +49,12 @@
     left: 1083.19px;
     top: -2.95px;
     background-repeat: round;
-    /*margin: -26px;*/
     transition: transform .2s; 
 }
 
 .contenedorcentral{
-    width: 60%;
-    margin: auto;
+    width: 80%;
+    margin-left: 15%;
     padding: 5px;
     text-align: center;
 }
@@ -111,7 +116,11 @@
     transition: transform .2s;
 }
 
-.boton:hover + br + .flecha{
+.flecha:hover{
+    transform: scale(1.175);
+}
+
+.boton:hover + br + #primera-flecha > .flecha{
     transform: scale(1.175);
 }
 
@@ -132,8 +141,9 @@
 
 .contenedorImagenesHome{
     text-align: center;
-    float: right;
-    margin-top: 0px;
+    float: none;
+    height: 100%;
+    margin-top: 10px;
     z-index: 999999;
     position: relative;
 }
@@ -183,6 +193,20 @@ html {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
+.carousel-root{
+      width: 100% !important;
+      height: 100% !important;
+  }
+  
+.carousel.carousel-slider{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    width: 100% !important;
+}
 
 @media screen and (max-width: 960px) {
     .contenedorImagenesHome{
@@ -300,9 +324,6 @@ html {
 }
 
 @media all and (max-width: 690px) and (min-width: 530px){
-    .col.s8.m10.l10{
-        width: 100%;
-    }
     .iconos{
         margin-top: 60px;
         position: absolute;
@@ -352,9 +373,6 @@ html {
 }
 
 @media all and (max-width: 530px) {
-    .col.s8.m10.l10{
-        width: 100%;
-    }
     .iconos{
         display: none;
     } 
@@ -370,4 +388,45 @@ button.control-arrow.control-next.control-disabled{
 
 button.control-arrow.control-prev.control-disabled{
     display: none;
+}
+
+.custom-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.height-diamante{
+    height: inherit;
+    text-align: center;
+}
+
+.align-diamante{
+    vertical-align: middle !important;
+}
+
+.align-helper {
+    display: inline-block;
+    height: 100% !important;
+    vertical-align: middle;
+}
+
+@media all and (max-width: 849px){
+    .align-helper {
+        display: inline-block;
+        height: 30% !important;
+        vertical-align: middle;
+    }
+}
+
+.linea-img{
+    width: inherit;
+}
+
+.flecha-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    background-repeat: none !important;
 }
