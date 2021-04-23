@@ -10,7 +10,7 @@ const Quienessomos = ()=>{
           <div className="col s12 m5 l4">
           <div className="contenedorcentralsomos">
        
-              <img src={izquierda} className="imagenLogosomos"/>
+              <img src={izquierda} className="imagenLogosomos zoom-on-load"/>
                
                
           </div>
@@ -22,17 +22,17 @@ const Quienessomos = ()=>{
           <div class="col s12 m7 l8" >
             <div className="contenedorsomos">
              
-              <p className="textoSomos">
+              <p className="textoSomos slide-in-animate-right">
                  Quienes somos
               </p>
               
-              <p className="textoCenterSomos">
+              <p className="textoCenterSomos slide-in-animate-right">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
               </p>
               <br/> 
-              <p className="textoCenterSomos">
+              <p className="textoCenterSomos slide-in-animate-right">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it to make a type specimen book. 

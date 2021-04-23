@@ -24,12 +24,12 @@ const Business = ()=>{
           {/*center */}
           <div className="contenedorcentral">
         
-                <img src={logo}   className="imagenLogoBusiness"/>
+                <img src={logo}   className="imagenLogoBusiness zoom-on-load"/>
                 <br/>
-                <p className="tituloParrafo">
+                <p className="tituloParrafo slide-in-animate">
                   Armada para trabajar
                 </p>
-                <p className="textoCenterBusiness">
+                <p className="textoCenterBusiness slide-in-animate">
                   Empresas y Pymes que busquen una experiencia
                   óptima y especializada para las áreas  de sus 
                   colaboradores. Este sector está dedicado para ustedes.
@@ -37,9 +37,9 @@ const Business = ()=>{
                 <br/>
 
                 
-                <a href="/conocemas"  class="botonBusiness">COTIZAR</a>
+                <a href="/conocemas"  class="botonBusiness zoom-on-load">COTIZAR</a>
                 <br/>
-                <p className="flecha"></p> *
+                <p className="flecha zoom-on-load"></p> *
           </div>
         </div>
         <div class="col s12 m4 l2">

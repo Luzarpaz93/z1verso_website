@@ -23,12 +23,12 @@ const Gaming = ()=>{
         {/*center */}
         <div className="contenedorcentralGaming">
       
-              <img src={logo}   className="imagenLogoGaming"/>
+              <img src={logo}   className="imagenLogoGaming zoom-on-load"/>
               <br/>
-              <p className="tituloParrafo">
+              <p className="tituloParrafo slide-in-animate">
                 Armada para jugar 
               </p>
-              <p className="textoCenterGaming">
+              <p className="textoCenterGaming slide-in-animate">
                 Sector dedicado para personas que quieren una 
                 experiencia de juego semiprofesional o profesional. 
                 Este sector está dedicado para ti
@@ -37,9 +37,9 @@ const Gaming = ()=>{
               <br/>
 
               
-              <a href="/"  class="botonGaming">Cotizar</a>
+              <a href="/"  class="botonGaming zoom-on-load">Cotizar</a>
               <br/>
-              <p className="flecha"></p> *
+              <p className="flecha zoom-on-load"></p> *
         </div>
       </div>
       <div class="col s12 m4 l2">

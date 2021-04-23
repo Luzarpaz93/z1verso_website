@@ -15,29 +15,29 @@ const Mejoratuequipo = ()=>{
       <div class="row">
         <div class="col s12 m6 l6">
 
-             <p className="textoSomosmejora">
+             <p className="textoSomosmejora slide-in-animate">
                 Lo que hacemos
               </p>
 
-              <p className="textoCenterSomos">
+              <p className="textoCenterSomos slide-in-animate">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
               </p>
 
-              <p className="mejoraArmado">
+              <p className="mejoraArmado slide-in-animate">
                 Armado a la medida
               </p>
 
           
-              <a href="/quienessomos"  class="boton botonQuien">Quiénes somos</a>
+              <a href="/quienessomos"  class="boton botonQuien zoom-on-load">Quiénes somos</a>
               <br/>
-              <p className="flechaMejora"></p>
+              <p className="flechaMejora zoom-on-load"></p>
         </div>
         <div class="col s12 m2 l4">
           
           <div className ="logoderechaMejora">
-            <img src={logo}   className="imagenLogoMejora"/>
+            <img src={logo}   className="imagenLogoMejora zoom-on-load"/>
                
            
           </div>

@@ -22,21 +22,21 @@ const Creative = ()=>{
         {/*center */}
         <div className="contenedorcentral">
       
-              <img src={logo}   className="imagenLogoCreative"/>
+              <img src={logo}   className="imagenLogoCreative zoom-on-load"/>
               <br/>
-              <p className="tituloParrafo">
+              <p className="tituloParrafo slide-in-animate">
                Armada para diseñar
               </p>
-              <p className="textoCenterCreative">
+              <p className="textoCenterCreative slide-in-animate">
                Personas que necesitan un rendimiento óptimo para edición  de audio, foto, video y cualquier tipo de renderizacion
                en alta calidad. Este sector está dedicado para ti.
               </p>
               <br/>
 
               
-              <a href="/conocemas"  class="botonCreative">COTIZAR</a>
+              <a href="/conocemas"  class="botonCreative zoom-on-load">COTIZAR</a>
               <br/>
-              <p className="flecha"></p> *
+              <p className="flecha zoom-on-load"></p> *
         </div>
       </div>
       <div class="col s12 m4 l2">

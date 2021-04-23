@@ -13,3 +13,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(80%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-animate{
+  animation: 0.20s ease-out 0s 1 slideInFromLeft !important;
+}
+
+.slide-in-animate-right{
+  animation: 0.20s ease-out 0s 1 slideInFromRight !important;
+}
+
+@keyframes zoom-load {
+  0%   {transform: scale(0.7);}
+  100% {transform: scale(1); }
+}
+
+.zoom-on-load {
+  animation: 0.20s ease-out 0s 1 zoom-load;
+}
