@@ -106,7 +106,7 @@ class Navbar extends Component {
               <li className="margenNavBAR">
                 <ul className="collapsible">
                   <li>
-                    <div className="collapsible-header nav-bar-text">
+                    <div className="collapsible-header nav-bar-text hide-on-med-and-up">
                       <i className="material-icons">bookmark</i>
                       Mi Empresa
                     </div>
