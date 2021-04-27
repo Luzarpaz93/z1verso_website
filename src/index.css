@@ -33,11 +33,11 @@ code {
 }
 
 .slide-in-animate{
-  animation: 0.20s ease-out 0s 1 slideInFromLeft !important;
+  animation: 0.50s ease-out 0s 1 slideInFromLeft !important;
 }
 
 .slide-in-animate-right{
-  animation: 0.20s ease-out 0s 1 slideInFromRight !important;
+  animation: 0.50s ease-out 0s 1 slideInFromRight !important;
 }
 
 @keyframes zoom-load {
@@ -46,5 +46,5 @@ code {
 }
 
 .zoom-on-load {
-  animation: 0.20s ease-out 0s 1 zoom-load;
+  animation: 0.40s ease-out 0s 1 zoom-load;
 }
