@@ -16,7 +16,7 @@ code {
 
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-80%);
+    transform: translateX(-70%);
   }
   100% {
     transform: translateX(0);
@@ -25,26 +25,46 @@ code {
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(80%);
+    transform: translateX(70%);
+    opacity: 0.5;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 .slide-in-animate{
-  animation: 0.50s ease-out 0s 1 slideInFromLeft !important;
+  animation: 1s ease-out 0s 1 slideInFromLeft !important;
 }
 
 .slide-in-animate-right{
-  animation: 0.50s ease-out 0s 1 slideInFromRight !important;
+  animation: 1s ease-out 0s 1 slideInFromRight !important;
+}
+
+.stateful-slide-left[slide='1']{
+  animation: 1s ease-out 0s 1 slideInFromLeft !important;
+}
+
+.stateful-slide-right[slide='1']{
+  animation: 1s ease-out 0s 1 slideInFromRight !important;
 }
 
 @keyframes zoom-load {
-  0%   {transform: scale(0.7);}
-  100% {transform: scale(1); }
+  0%   {
+    transform: scale(0.4);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1; 
+  }
 }
 
 .zoom-on-load {
-  animation: 0.40s ease-out 0s 1 zoom-load;
+  animation: 0.90s ease-out 0s 1 zoom-load;
+}
+
+.stateful-zoom[animate="1"]{
+  animation: 0.90s ease-out 0s 1 zoom-load;
 }
