@@ -68,3 +68,57 @@ code {
 .stateful-zoom[animate="1"]{
   animation: 0.90s ease-out 0s 1 zoom-load;
 }
+
+.home-background{
+  background: url("../src/Imagenes/fondo.png") no-repeat center center fixed !important;
+  background-size: cover;
+}
+
+.gaming-background{
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../src/Imagenes/Optimized-FondoGaming.png") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+.business-background{
+  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("../src/Imagenes/FondoBusiness_1440x900.png") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+.creative-background{
+  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("../src/Imagenes/FondoCreative.png") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+nav {
+  box-shadow: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.titulo-galeria{
+  display: block;
+  width: 100%;
+  font-family: Saira;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 110px !important;
+}
+
+.linea-galeria{
+  margin-left: 1% !important;
+  margin-right: 1% !important;
+  margin-bottom: 4vh !important;
+  padding: 6px !important;
+  width: 100%;
+}
+
+.control-galeria{
+  height: 230px;
+  width: 100%;
+}
+
+.no-padding{
+  padding: 0 !important;
+}

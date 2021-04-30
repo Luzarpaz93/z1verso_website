@@ -28,8 +28,10 @@
     width: 218px;
     height: 287px;
     left: 527px;
-    top: 137px;
-    margin-top: 137px;
+    /*top: 137px;
+    margin-top: 137px;*/
+    top: 110px;
+    margin-top: 110px;
  
 }
 .textoCenterBusiness {
@@ -62,5 +64,17 @@
 
     .imagenLogoBusiness{
         margin-top: 30px;     
+    }
+
+    .titulo-galeria{
+        display: block;
+        width: 100%;
+        font-family: Saira;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 10px !important;
     }
 }
