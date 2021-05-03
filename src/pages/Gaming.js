@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
-import logo from "../Imagenes/logoGaming.png";
+import logo from "../Imagenes/jugarLogo2.png";
 import control from "../Imagenes/ControlGaleria.png";
 import linea from "../Imagenes/line.png";
 import TabsGaming from "../Tabs/TabsGaming.js";
