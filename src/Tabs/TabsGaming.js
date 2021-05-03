@@ -13,6 +13,8 @@ class Tabs extends Component {
 
   notify = () => toast.error("Los campos con asterisco son obligatorios");
   notify_mail = () => toast.error("Capture una dirección valida de correo");
+  notify_send_success = () => toast.success("Correo Enviado");
+  notify_send_error = () => toast.error("Ocurrió un error al enviar el correo");
 
   componentDidMount() {
     this.instance = M.Tabs.init(this.Tabs);
@@ -48,8 +50,7 @@ class Tabs extends Component {
           to_name: "Ziverso",
         };
 
-        console.log(mensajeCompleto);
-        /*emailjs
+        emailjs
           .send(
             "service_uzqm4x4",
             "template_2r31rfd",
@@ -59,11 +60,13 @@ class Tabs extends Component {
           .then(
             (response) => {
               console.log("SUCCESS!", response.status, response.text);
+              this.notify_send_success();
             },
             (err) => {
               console.log("FAILED...", err);
+              this.notify_send_error();
             }
-          );*/
+          );
       } else {
         this.notify_mail();
       }
@@ -222,7 +225,7 @@ class Tabs extends Component {
               Caracteristicas adicionales*
             </label>
           </div>
-          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l5">
+          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4">
             <button
               className="botonGaming pointer"
               onClick={() => this.enviarOnCLick()}

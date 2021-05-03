@@ -77,3 +77,47 @@
     }
 }
 
+.form-container{
+    background-color: #000;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#caracteristicas_adicionales{
+    resize: none;
+    overflow: auto;
+    height: 170px !important;
+}
+
+.select-wrapper input.select-dropdown{
+    color: #fff;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+    border-radius: 20px;   
+}
+
+.margin-siguiente{
+    margin-top: 90px;
+}
+

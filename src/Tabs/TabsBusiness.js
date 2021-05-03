@@ -5,7 +5,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import { ToastContainer, toast } from "material-react-toastify";
 import "material-react-toastify/dist/ReactToastify.css";
 
-class TabsCreative extends Component {
+class TabsBusiness extends Component {
   formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "MXN",
@@ -19,7 +19,7 @@ class TabsCreative extends Component {
   componentDidMount() {
     this.instance = M.Tabs.init(this.Tabs);
     this.instance = M.Tabs.getInstance(this.Tabs);
-    var elems = document.querySelectorAll('select');
+    var elems = document.querySelectorAll("select");
     var instances = M.FormSelect.init(elems, {});
     this.regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   }
@@ -29,24 +29,32 @@ class TabsCreative extends Component {
   }
 
   enviarOnCLick() {
-    if (this.Email && this.Nombre && this.DataProgramas && this.CaracAdicional && this.UsoPrincipalPc) {
+    if (
+      this.NombreEmpresa &&
+      this.NombreContacto &&
+      this.Email &&
+      this.NumeroEquipos &&
+      this.ProgramasUsar &&
+      this.DataAreaTrabajo
+    ) {
       if (this.Email.match(this.regEmail)) {
         let mensajeCompleto =
-          "Nombre: " +
-          this.Nombre +
-          "\nProgramas usados normalmente: " +
-          this.DataProgramas +
+          "Nombre de la Empresa: " +
+          this.NombreEmpresa +
+          "\nNombre del Contacto: " +
+          this.NombreContacto +
           "\nCorreo eléctronico: " +
           this.Email +
+          "\nArea de Trabajo: " +
+          this.DataAreaTrabajo +
           "\n" +
-          "Presupuesto: " +
-          ((this.Presupuesto) ? this.Presupuesto : "No Especificado") +
-          "\nUso principal de la PC: " + this.UsoPrincipalPc +
-          "\n\nCaracteristicas Adicionales:\n" +
-          (this.CaracAdicional ?? "");
+          "Número de Equipos: " +
+          this.NumeroEquipos +
+          "\nProgramas a Usar:\n" +
+          (this.ProgramasUsar ?? "");
 
         const templateParams = {
-          from_name: this.Nombre,
+          from_name: this.NombreEmpresa,
           message: mensajeCompleto,
           to_name: "Ziverso",
         };
@@ -77,45 +85,28 @@ class TabsCreative extends Component {
   }
 
   //setname(e.target.value)
-  onChangeNombre(nombre) {
-    this.Nombre = nombre;
+  onChangeNombreEmpresa(nombre) {
+    this.NombreEmpresa = nombre;
+  }
+
+  onChangeNombreContacto(nombre) {
+    this.NombreContacto = nombre;
   }
 
   onChangeEmail(mail) {
     this.Email = mail;
   }
 
-  onChangePresupuesto(option) {
-    //this.Presupuesto = budget;
-    let data = parseInt(option ?? 0);
-    switch(data){
-      case 0:
-        this.Presupuesto = "";
-        break;
-      case 1:
-        this.Presupuesto = "10,000 - 15,000";
-        break;
-      case 2:
-        this.Presupuesto = "15,000 - 20,000";
-        break;
-      case 3:
-        this.Presupuesto = "25,000 - más";
-        break;
-
-    }
-    console.log(option)
+  onChangeNumeroEquipos(numeroEquipos) {
+    this.NumeroEquipos = numeroEquipos;
   }
 
-  onChangeDetalle(adicional) {
-    this.CaracAdicional = adicional;
+  onChangeDetalle(programasUsar) {
+    this.ProgramasUsar = programasUsar;
   }
 
-  onChangeProgramas(programas_usados) {
-    this.DataProgramas = programas_usados;
-  }
-
-  onChangeUsoPc(usosPc){
-    this.UsoPrincipalPc = usosPc;
+  onChangeAreaTrabajo(areaTrabajo) {
+    this.DataAreaTrabajo = areaTrabajo;
   }
 
   render() {
@@ -147,9 +138,22 @@ class TabsCreative extends Component {
               type="text"
               className="white-text"
               autocomplete="off"
-              onChange={(e) => this.onChangeNombre(e.target.value)}
+              onChange={(e) => this.onChangeNombreEmpresa(e.target.value)}
             />
-            <label htmlFor="nombre">Nombre*</label>
+            <label htmlFor="nombre">Nombre de la Empresa*</label>
+          </div>
+          <div
+            className="input-field col s12 m12 l12"
+            style={{ margin: "none", padding: "8px" }}
+          >
+            <input
+              id="nombre"
+              type="text"
+              className="white-text"
+              autocomplete="off"
+              onChange={(e) => this.onChangeNombreContacto(e.target.value)}
+            />
+            <label htmlFor="nombre">Nombre del Contacto*</label>
           </div>
           <div
             className="input-field col s12 m12 l12"
@@ -165,20 +169,6 @@ class TabsCreative extends Component {
             <label htmlFor="email">Email*</label>
           </div>
 
-          <div
-            className="input-field col s12 m12 l12"
-            style={{ margin: "none", padding: "8px" }}
-          >
-            <input
-              id="jegos"
-              type="text"
-              className="white-text"
-              autocomplete="off"
-              onChange={(e) => this.onChangeProgramas(e.target.value)}
-            />
-            <label htmlFor="juegos">¿Que programas usas normalmente?*</label>
-          </div>
-
           <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4">
             <button
               className="botonGaming pointer margin-siguiente"
@@ -190,30 +180,6 @@ class TabsCreative extends Component {
         </div>
         <div id="test-swipe-2" className="col s12 m12 l12 black">
           <div
-            class="input-field col s12 m12 l12"
-            style={{ margin: "none", padding: "8px" }}
-          >
-            <i class="material-icons prefix icon-white">paid</i>
-            <select id="select-presupuesto" style={{color: "#ffffff"}}
-            onChange={e => this.onChangePresupuesto(e.target.value)}>
-              <option defaultValue="0" value="0">
-                Opcional
-              </option>
-              <option value="1">10,000 - 15,000</option>
-              <option value="2">15,000 - 20,000</option>
-              <option value="3">25,000 - más</option>
-            </select>
-            <label htmlFor="select-presupuesto">Presupuesto</label>
-            {/*<input
-              id="presupuesto"
-              type="number"
-              className="white-text"
-              autocomplete="off"
-              onChange={(e) => this.onChangePresupuesto(e.target.value)}
-            />
-            <label htmlFor="presupuesto">Presupuesto</label>*/}
-          </div>
-          <div
             className="input-field col s12 m12 l12"
             style={{ margin: "none", padding: "8px" }}
           >
@@ -222,9 +188,22 @@ class TabsCreative extends Component {
               type="text"
               className="white-text"
               autocomplete="off"
-              onChange={(e) => this.onChangeUsoPc(e.target.value)}
+              onChange={(e) => this.onChangeAreaTrabajo(e.target.value)}
             />
-            <label htmlFor="juegos">Uso principal de la PC*</label>
+            <label htmlFor="juegos">Area de trabajo*</label>
+          </div>
+          <div
+            class="input-field col s12 m12 l12"
+            style={{ margin: "none", padding: "8px" }}
+          >
+            <input
+              id="presupuesto"
+              type="number"
+              className="white-text"
+              autocomplete="off"
+              onChange={(e) => this.onChangeNumeroEquipos(e.target.value)}
+            />
+            <label htmlFor="presupuesto">Número de Equipos*</label>
           </div>
           <div
             className="input-field col s12 m12 l12"
@@ -240,7 +219,7 @@ class TabsCreative extends Component {
               onChange={(e) => this.onChangeDetalle(e.target.value)}
             ></textarea>
             <label htmlFor="caracteristicas_adicionales">
-              Caracteristicas adicionales*
+              Programa(s) a Usar*
             </label>
           </div>
           <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4">
@@ -258,4 +237,4 @@ class TabsCreative extends Component {
   }
 }
 
-export default TabsCreative;
+export default TabsBusiness;
