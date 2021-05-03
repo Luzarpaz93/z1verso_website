@@ -122,3 +122,11 @@ nav {
 .no-padding{
   padding: 0 !important;
 }
+
+.pointer{
+  cursor: pointer;
+}
+
+i.icon-white {
+  color: white;
+}
