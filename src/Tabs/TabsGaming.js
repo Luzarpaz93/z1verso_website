@@ -6,22 +6,28 @@ import { ToastContainer, toast } from "material-react-toastify";
 import "material-react-toastify/dist/ReactToastify.css";
 
 class Tabs extends Component {
+
+  componentDidMount(){
+    this.checkCotizarMouse = false;
+  }
+
   formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "MXN",
+    currency: "MXN"
   });
 
   notify = () => toast.error("Los campos con asterisco son obligatorios");
   notify_mail = () => toast.error("Capture una dirección valida de correo");
-  notify_send_success = () => toast.success("Correo Enviado");
+  notify_send_success = () => toast.success("¡Gracias, pronto estaremos en contacto contigo!");
   notify_send_error = () => toast.error("Ocurrió un error al enviar el correo");
 
   componentDidMount() {
     this.instance = M.Tabs.init(this.Tabs);
     this.instance = M.Tabs.getInstance(this.Tabs);
-    var elems = document.querySelectorAll('select');
+    var elems = document.querySelectorAll("select");
     var instances = M.FormSelect.init(elems, {});
-    this.regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    this.regEmail =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   }
 
   siguienteOnCLick() {
@@ -40,14 +46,14 @@ class Tabs extends Component {
           this.Email +
           "\n" +
           "Presupuesto: " +
-          ((this.Presupuesto) ? this.Presupuesto : "No Especificado") +
+          (this.Presupuesto ? this.Presupuesto : "No Especificado") +
           "\n\nCaracteristicas Adicionales:\n" +
           (this.CaracAdicional ?? "");
 
         const templateParams = {
           from_name: this.Nombre,
           message: mensajeCompleto,
-          to_name: "Ziverso",
+          to_name: "Ziverso"
         };
 
         emailjs
@@ -58,11 +64,11 @@ class Tabs extends Component {
             "user_Sh6GL9McCN2ZjRzffcdQY"
           )
           .then(
-            (response) => {
+            response => {
               console.log("SUCCESS!", response.status, response.text);
               this.notify_send_success();
             },
-            (err) => {
+            err => {
               console.log("FAILED...", err);
               this.notify_send_error();
             }
@@ -87,7 +93,7 @@ class Tabs extends Component {
   onChangePresupuesto(option) {
     //this.Presupuesto = budget;
     let data = parseInt(option ?? 0);
-    switch(data){
+    switch (data) {
       case 0:
         this.Presupuesto = "";
         break;
@@ -100,9 +106,8 @@ class Tabs extends Component {
       case 3:
         this.Presupuesto = "25,000 - más";
         break;
-
     }
-    console.log(option)
+    console.log(option);
   }
 
   onChangeDetalle(adicional) {
@@ -113,11 +118,16 @@ class Tabs extends Component {
     this.DataJuegos = juegos;
   }
 
+  checkCotizarMouseChange(e){
+    this.checkCotizarMouse = !this.checkCotizarMouse;
+    console.log(this.checkCotizarMouse);
+  }
+
   render() {
     return (
       <>
         <ul
-          ref={(Tabs) => {
+          ref={Tabs => {
             this.Tabs = Tabs;
           }}
           id="tabs-swipe-demo"
@@ -142,7 +152,7 @@ class Tabs extends Component {
               type="text"
               className="white-text"
               autocomplete="off"
-              onChange={(e) => this.onChangeNombre(e.target.value)}
+              onChange={e => this.onChangeNombre(e.target.value)}
             />
             <label htmlFor="nombre">Nombre*</label>
           </div>
@@ -155,7 +165,7 @@ class Tabs extends Component {
               type="email"
               className="white-text"
               autocomplete="off"
-              onChange={(e) => this.onChangeEmail(e.target.value)}
+              onChange={e => this.onChangeEmail(e.target.value)}
             />
             <label htmlFor="email">Email*</label>
           </div>
@@ -169,7 +179,7 @@ class Tabs extends Component {
               type="text"
               className="white-text"
               autocomplete="off"
-              onChange={(e) => this.onChangeJuegos(e.target.value)}
+              onChange={e => this.onChangeJuegos(e.target.value)}
             />
             <label htmlFor="juegos">¿Que juegas normalmente?*</label>
           </div>
@@ -189,8 +199,11 @@ class Tabs extends Component {
             style={{ margin: "none", padding: "8px" }}
           >
             <i class="material-icons prefix icon-white">paid</i>
-            <select id="select-presupuesto" style={{color: "#ffffff"}}
-            onChange={e => this.onChangePresupuesto(e.target.value)}>
+            <select
+              id="select-presupuesto"
+              style={{ color: "#ffffff" }}
+              onChange={e => this.onChangePresupuesto(e.target.value)}
+            >
               <option defaultValue="0" value="0">
                 Opcional
               </option>
@@ -210,7 +223,7 @@ class Tabs extends Component {
           </div>
           <div
             className="input-field col s12 m12 l12"
-            style={{ margin: "none", padding: "8px" }}
+            style={{ margin: "0", padding: "8px" }}
           >
             <textarea
               id="caracteristicas_adicionales"
@@ -219,13 +232,23 @@ class Tabs extends Component {
               autocomplete="off"
               rows="6"
               cols="50"
-              onChange={(e) => this.onChangeDetalle(e.target.value)}
+              placeholder="Tamaño equipo, luces rgb, que tenga wifi, colores del gabinet, cotizar mouse con colores del gabinete..."
+              onChange={e => this.onChangeDetalle(e.target.value)}
             ></textarea>
             <label htmlFor="caracteristicas_adicionales">
               Caracteristicas adicionales*
             </label>
           </div>
-          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4">
+          {/*<div
+            className="input-field col s12 m12 l12"
+            style={{ margin: "0", padding: "8px" }}
+          >
+            <label className="check-mouse-gabinete">
+              <input type="checkbox" className="filled-in" onChange={e => this.checkCotizarMouseChange(e)}/>
+              <span>Cotizar mouse con colores del gabinete</span>
+            </label>
+          </div>*/}
+          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4" style={{marginTop: "5px"}}>
             <button
               className="botonGaming pointer"
               onClick={() => this.enviarOnCLick()}

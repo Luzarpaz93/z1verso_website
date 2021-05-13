@@ -13,7 +13,7 @@ class TabsCreative extends Component {
 
   notify = () => toast.error("Los campos con asterisco son obligatorios");
   notify_mail = () => toast.error("Capture una dirección valida de correo");
-  notify_send_success = () => toast.success("Correo Enviado");
+  notify_send_success = () => toast.success("¡Gracias, pronto estaremos en contacto contigo!");
   notify_send_error = () => toast.error("Ocurrió un error al enviar el correo");
 
   componentDidMount() {
@@ -237,6 +237,7 @@ class TabsCreative extends Component {
               autocomplete="off"
               rows="6"
               cols="50"
+              placeholder="Tamaño equipo, luces rgb, que tenga wifi, colores del gabinete, cotizar mouse con colores del gabinete..."
               onChange={(e) => this.onChangeDetalle(e.target.value)}
             ></textarea>
             <label htmlFor="caracteristicas_adicionales">
