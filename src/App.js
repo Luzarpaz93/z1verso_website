@@ -61,8 +61,8 @@ function App() {
       </Router>
       <WhatsAppWidget 
       className="btn_whatsapp" 
-      phoneNumber="+529993158601" 
-      companyName="Ziverso"
+      phoneNumber="+525574969788"
+      companyName="Z1verso"
       textReplyTime="Contactanos" 
       message="Cotiza tu equipo con nosotros 😀"
       sendButton="Enviar"/>
