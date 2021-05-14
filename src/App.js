@@ -19,6 +19,7 @@ import Header from "./sideBar/Header";
 import Sidebar from "./Navbar/Sidebar";
 import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
+import WhatsappButtonSM from "./Social/WhatsAppButtonSM";
 
 function App() {
   return (
@@ -27,7 +28,6 @@ function App() {
         <div>
           <Header />
           <Navbar />
-
           <Switch>
             <Route path="/contacto">
               <Contacto />
@@ -59,13 +59,7 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <WhatsAppWidget 
-      className="btn_whatsapp" 
-      phoneNumber="+525574969788"
-      companyName="Z1verso"
-      textReplyTime="Contactanos" 
-      message="Cotiza tu equipo con nosotros 😀"
-      sendButton="Enviar"/>
+      <WhatsappButtonSM />
     </React.Fragment>
   );
 }

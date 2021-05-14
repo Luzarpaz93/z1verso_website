@@ -42,9 +42,9 @@ h1{
     font-family: Saira;
     font-style: normal;
     font-weight: normal;
-    font-size: /*24px*/3.8vh;
-    line-height: /*38px*/ 5.4hv;
-    text-align: center;
+    font-size: /*24px*/3.6vh;
+    line-height: /*38px*/ 5.2hv;
+    text-align: left;
     color: #fff;
     padding-left: 4%;
     padding-right: 4%;
@@ -113,4 +113,27 @@ h1{
 .custom-flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.mt-r2{
+    margin-top: 20px !important;
+}
+
+.p-c-1{
+    padding: 10px !important;
+}
+
+.subtexto-somos{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 400;
+    font-size: /*40px*/5.0vh;
+    line-height: /*63px*/10.1vh;
+}
+
+.text-shade-q{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

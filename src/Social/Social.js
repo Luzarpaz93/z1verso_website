@@ -42,7 +42,7 @@ export default function SocialFlow() {
       <div className="social-container margenRedes">
         {/*Whatsapp */}
       <a
-          href="https://wwww.twitter.com"
+          href="https://api.whatsapp.com/send?phone=+525574969788"
           className={name}
         >
           <FontAwesomeIcon icon={faWhatsapp} size="1x"   />

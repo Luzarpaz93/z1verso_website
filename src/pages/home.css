@@ -372,12 +372,6 @@ html {
     }
 }
 
-@media all and (max-width: 530px) {
-    .iconos{
-        display: none;
-    } 
-}
-
 div.slider-wrapper.axis-vertical {
     height: 100%;
 }
