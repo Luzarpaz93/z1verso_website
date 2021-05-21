@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
-import logo from "../Imagenes/logoCreative.png";
+import logo from "../Imagenes/Z1verso_Creative_Blanco_C.svg";
 import control from "../Imagenes/ControlGaleria.png";
 import linea from "../Imagenes/line.png";
 import "../pages/Creative.css";
@@ -27,15 +27,19 @@ const Creative = () => {
         <div class="col s12 m8 l9">
           {/*center */}
           <div className="contenedorcentral">
-            <img src={logo} className="imagenLogoCreative zoom-on-load" />
+            <img src={logo} className="imagenLogoCreative zoom-on-load logo-svg-proportions" />
             <br />
             <p className="tituloParrafo slide-in-animate">
-              Armada para diseñar
+              Armada para editar
             </p>
-            <p className="textoCenterCreative slide-in-animate">
+            <p className="textoCenterCreative slide-in-animate justificar">
               Personas que necesitan un rendimiento óptimo para edición de
               audio, foto, video y cualquier tipo de renderizacion en alta
               calidad. Este sector está dedicado para ti.
+            </p>
+            <br />
+            <p className="textoCenterCreative slide-in-animate">
+              Equipos desde $13,500
             </p>
             <br />
             <a href="#cotizar-creative" class="botonCreative zoom-on-load">
@@ -66,7 +70,7 @@ const Creative = () => {
         style={{ paddingLeft: "5.5%", paddingRight: "2%", height: "600px" }}
       >
         <div className="form-container col s12 m8 offset-m2 l6 offset-l3">
-          <div className="row my-row">
+          <div className="row my-row normalize-material-tabs">
             <TabsCreative></TabsCreative>
           </div>
         </div>

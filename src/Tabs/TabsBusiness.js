@@ -121,10 +121,10 @@ class TabsBusiness extends Component {
           style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
         >
           <li className="tab col s3">
-            <a href="#test-swipe-1">Info 1</a>
+            <a href="#test-swipe-1">Paso 1</a>
           </li>
           <li className="tab col s3">
-            <a href="#test-swipe-2">Info 2</a>
+            <a href="#test-swipe-2">Paso 2</a>
           </li>
         </ul>
 
@@ -169,9 +169,9 @@ class TabsBusiness extends Component {
             <label htmlFor="email">Email*</label>
           </div>
 
-          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4">
+          <div className="col s12 m12 l12">
             <button
-              className="botonGaming pointer margin-siguiente"
+              className="botonGaming pointer margin-siguiente center-block"
               onClick={() => this.siguienteOnCLick()}
             >
               Siguiente
@@ -190,7 +190,7 @@ class TabsBusiness extends Component {
               autocomplete="off"
               onChange={(e) => this.onChangeAreaTrabajo(e.target.value)}
             />
-            <label htmlFor="juegos">Area de trabajo*</label>
+            <label htmlFor="juegos">Área de trabajo*</label>
           </div>
           <div
             class="input-field col s12 m12 l12"
@@ -223,9 +223,9 @@ class TabsBusiness extends Component {
               Programa(s) a Usar*
             </label>
           </div>
-          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4">
+          <div className="col s12 m12 l12">
             <button
-              className="botonGaming pointer"
+              className="botonGaming pointer center-block"
               onClick={() => this.enviarOnCLick()}
             >
               Enviar

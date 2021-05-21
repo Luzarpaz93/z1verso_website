@@ -31,10 +31,10 @@ const Home = () => {
           <div className="contenedorcentral">
             <img src={logo} className="imagenLogo zoom-on-load" />
             <br />
-            <p className="textoCenter slide-in-animate">
+            <p className="textoCenter slide-in-animate justificar">
               Somos un equipo especializado en ensamblado personalizado de
-              hardware para distintos sectores empresariales, asi como para
-              particulares dedicados al diseño o a la industría de videojuegos.
+              hardware para distintos sectores empresariales y particulares 
+              dedicados al diseño o a la industria de videojuegos.
             </p>
             <br />
             <a
@@ -124,7 +124,7 @@ const Home = () => {
               animate={animate.section1}
             />
             <p
-              className="textoCenter stateful-slide-left"
+              className="textoCenter stateful-slide-left justificar"
               slide={animate.section1}
               onAnimationEnd={() => setAnimate({ section1: 0, section2: 0 })}
             >
@@ -172,7 +172,7 @@ const Home = () => {
               onAnimationEnd={() => setAnimate({ section1: 0, section2: 0 })}
             />
             <p
-              className="textoCenter stateful-slide-right"
+              className="textoCenter stateful-slide-right justificar"
               slide={animate.section1}
               onAnimationEnd={() => setAnimate({ section1: 0, section2: 0 })}
             >
@@ -239,8 +239,11 @@ const Home = () => {
               className="textoCenterValores stateful-slide-left"
               slide={animate.section2}
             >
-              Honestidad: Expresamos nuestras ideas a los demás de forma
-              respetuosa, no ocultamos información de nuestros compañeros.
+              Honestidad: Expresamos nuestras ideas a los demás 
+              de forma respetuosa. No ocultamos
+              información de nuestros servicios a clientes y
+              proveedores. Fomentamos una cultura
+              organizacional honesta.
             </p>
             <p
               className="textoCenterValores stateful-slide-left"

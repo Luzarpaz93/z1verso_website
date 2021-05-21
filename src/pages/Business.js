@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
-import logo from "../Imagenes/logoBusiness.png";
+import logo from "../Imagenes/Z1verso_Business_Blanco_B.svg";
 import control from "../Imagenes/ControlGaleria.png";
 import linea from "../Imagenes/line.png";
 import TabsBusiness from "../Tabs/TabsBusiness.js";
@@ -27,15 +27,19 @@ const Business = () => {
         <div class="col s12 m8 l9">
           {/*center */}
           <div className="contenedorcentral">
-            <img src={logo} className="imagenLogoBusiness zoom-on-load" />
+            <img src={logo} className="imagenLogoBusiness zoom-on-load logo-svg-proportions" />
             <br />
             <p className="tituloParrafo slide-in-animate">
               Armada para trabajar
             </p>
-            <p className="textoCenterBusiness slide-in-animate">
+            <p className="textoCenterBusiness slide-in-animate justificar">
               Empresas y Pymes que busquen una experiencia óptima y
               especializada para las áreas de sus colaboradores. Este sector
               está dedicado para ustedes.
+            </p>
+            <br />
+            <p className="textoCenterBusiness slide-in-animate justificar">
+              Equipos desde $6,000 pesos
             </p>
             <br />
             <a href="#cotizar-business" class="botonBusiness zoom-on-load">
@@ -66,7 +70,7 @@ const Business = () => {
         style={{ paddingLeft: "5.5%", paddingRight: "2%", height: "600px" }}
       >
         <div className="form-container col s12 m8 offset-m2 l6 offset-l3">
-          <div className="row my-row">
+          <div className="row my-row normalize-material-tabs">
             <TabsBusiness></TabsBusiness>
           </div>
         </div>

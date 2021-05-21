@@ -284,3 +284,16 @@ body {
     font-weight: bold;
 }
 
+.absolute-subnav{
+    position: absolute;
+    width: 85%;
+}
+
+ul.inline-social{
+    display: inline;
+}
+
+ul.inline-social li{
+    display: inline;
+}
+

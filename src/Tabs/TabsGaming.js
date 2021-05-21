@@ -135,10 +135,10 @@ class Tabs extends Component {
           style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
         >
           <li className="tab col s3">
-            <a href="#test-swipe-1">Info 1</a>
+            <a href="#test-swipe-1">Paso 1</a>
           </li>
           <li className="tab col s3">
-            <a href="#test-swipe-2">Info 2</a>
+            <a href="#test-swipe-2">Paso 2</a>
           </li>
         </ul>
 
@@ -181,12 +181,12 @@ class Tabs extends Component {
               autocomplete="off"
               onChange={e => this.onChangeJuegos(e.target.value)}
             />
-            <label htmlFor="juegos">¿Que juegas normalmente?*</label>
+            <label htmlFor="juegos">¿Qué juegas normalmente?*</label>
           </div>
 
-          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4">
+          <div className="col s12 m12 l12">
             <button
-              className="botonGaming pointer"
+              className="botonGaming pointer center-block"
               onClick={() => this.siguienteOnCLick()}
             >
               Siguiente
@@ -232,7 +232,7 @@ class Tabs extends Component {
               autocomplete="off"
               rows="6"
               cols="50"
-              placeholder="Tamaño equipo, luces rgb, que tenga wifi, colores del gabinet, cotizar mouse con colores del gabinete..."
+              placeholder="Tamaño equipo, luces rgb, que tenga wifi, colores del gabinete, cotizar mouse con colores del gabinete..."
               onChange={e => this.onChangeDetalle(e.target.value)}
             ></textarea>
             <label htmlFor="caracteristicas_adicionales">
@@ -248,9 +248,9 @@ class Tabs extends Component {
               <span>Cotizar mouse con colores del gabinete</span>
             </label>
           </div>*/}
-          <div className="col s6 offset-s4 m6 offset-m3 l6 offset-l4" style={{marginTop: "5px"}}>
+          <div className="col s12 m12 l12" style={{marginTop: "5px"}}>
             <button
-              className="botonGaming pointer"
+              className="botonGaming pointer center-block"
               onClick={() => this.enviarOnCLick()}
             >
               Enviar

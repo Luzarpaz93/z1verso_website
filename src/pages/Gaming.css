@@ -1,5 +1,5 @@
 .botonGaming{
-    display: inline-block  !important;
+    display: inline-block;
     padding: 15px 40px;
     border: none;
     left: 525px;
@@ -23,7 +23,7 @@
 }
 
 .contenedorcentralGaming{
-    width: 60%;
+    width: 100%;
     margin: auto;
     padding: 5px;
     text-align: center;
@@ -48,6 +48,8 @@
     line-height: 38px;
     text-align: center;
     color: #fff;
+    padding-left: 11%;
+    padding-right: 11%;
 }
 
 .tituloParrafo{
@@ -106,3 +108,4 @@ input[type=number] {
 .select-wrapper input.select-dropdown{
     color: #fff;
 }
+

@@ -28,12 +28,16 @@ const Gaming = () => {
         <div class="col s12 m8 l9">
           {/*center */}
           <div className="contenedorcentralGaming">
-            <img src={logo} className="imagenLogoGaming zoom-on-load" />
+            <img src={logo} className="imagenLogoGaming zoom-on-load center-block" />
             <br />
             <p className="tituloParrafo slide-in-animate">Armada para jugar</p>
-            <p className="textoCenterGaming slide-in-animate">
+            <p className="textoCenterGaming slide-in-animate justificar">
               Sector dedicado para personas que quieren una experiencia de juego
               semiprofesional o profesional. Este sector está dedicado para ti
+            </p>
+            <br />
+            <p className="textoCenterGaming slide-in-animate">
+              Equipos desde $13,500
             </p>
             <br />
             <a href="#cotizar-gaming" className="botonGaming zoom-on-load">
@@ -64,7 +68,7 @@ const Gaming = () => {
         style={{ paddingLeft: "5.5%", paddingRight: "2%", height: "500px" }}
       >
         <div className="form-container col s12 m8 offset-m2 l6 offset-l3">
-          <div className="row my-row">
+          <div className="row my-row normalize-material-tabs">
             <TabsGaming></TabsGaming>
           </div>
         </div>
