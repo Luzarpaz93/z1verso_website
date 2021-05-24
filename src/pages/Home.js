@@ -39,7 +39,7 @@ const Home = () => {
             <br />
             <a
               href="#conocemas"
-              class="boton zoom-on-load"
+              className="boton zoom-on-load"
               onClick={() => setAnimate({ section1: 1, section2: 0 })}
             >
               Conoce más
@@ -95,8 +95,8 @@ const Home = () => {
                 </div>
               </Carousel>
             </div>*/}
-          <div class="row">
-            <div class="col s8 offset-s2 m12 l12 no-padding">
+          <div className="row">
+            <div className="col s8 offset-s2 m12 l12 no-padding">
               <span className="titulo-galeria slide-in-animate-right">
                 Galería
               </span>

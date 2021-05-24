@@ -53,22 +53,22 @@ class Navbar extends Component {
     return (
       <div>
         <nav>
-          <div class="nav-wrapper Navbar">
-            <a href="#!" class="brand-logo">
+          <div className="nav-wrapper Navbar">
+            <a href="#!" className="brand-logo">
               {" "}
               <img src={logo} className="iconLogo" />
             </a>
 
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
-              <i class="material-icons">menu</i>
+            <a href="#" data-target="mobile-demo" className="sidenav-trigger right">
+              <i className="material-icons">menu</i>
             </a>
-            <a href="#" data-target="menuleft" class="sidenav-trigger left">
+            <a href="#" data-target="menuleft" className="sidenav-trigger left">
               <img
                 src={homelateral}
                 className="iconolateral hide-on-small-only"
               />
             </a>
-            <ul class="left hide-on-med-and-down navbarcenter">
+            <ul className="left hide-on-med-and-down navbarcenter">
               <li className="margenNavBAR">
                 <a href="/">HOME</a>
               </li>

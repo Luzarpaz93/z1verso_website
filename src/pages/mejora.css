@@ -57,14 +57,15 @@ color: #FFFFFF;
 
 .textoSomosmejora{
     text-align: center;
-    margin-top: 120px;
+    /*margin-top: 120px;*/
+    margin: 0;
     color: white;
     text-decoration: underline;
     font-family: Saira;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 63px;
+    font-size: 6.3vh/*40px*/;
+    line-height: 10.1vh/*63px*/;
     text-align: center;
 }
 
@@ -72,14 +73,26 @@ color: #FFFFFF;
     margin-top: 183px;
 }
 
-@media screen and (max-width: 960px) {
-    .textoSomosmejora {
-       margin-top: -200px;
-    }
-   
-    .botonQuien {
+@media screen and (max-width: 768px) {
+    .flechaMejora{
+        float: none;
         margin: auto;
-        margin-right: 107px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    /*.textoSomosmejora {
+       margin-top: -200px;       
+    }*/
+    .botonQuien {
+        margin-left: auto !important;
+        display: flex !important;
+        float: none;
+        /*margin-right: 107px;*/
+    }
+
+    .flechaMejora{
+        margin-right: 0 !important;
     }
 
     .logoderechaMejora {
@@ -98,6 +111,71 @@ color: #FFFFFF;
 @media only screen and (max-width: 768px) {
 
     .botonQuien {
-        margin-right: 50px;
+        margin: auto !important;
+        display: flex !important;
+        float: none;
+        /*margn-right: 50px;*/
     }
   }
+
+  .textoCenterSomos{
+      padding-left: 15%;
+  }
+
+  .logo-outline-size{
+      width: 100%;
+      max-height: 310px;
+  }
+
+  .texto-body-mejora{
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.7vh;
+    line-height: 5vh;
+    padding: 20px;
+  }
+
+  .text-shade-m{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.btn-mejora{
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px !important;
+}
+
+.form-mejora-1{
+    padding-left: 5.5%;
+    padding-right: 2%;
+    height: 700px;
+}
+
+#necesito-estas-piezas{
+    resize: none;
+    overflow: auto;
+    height: 400px !important;
+} 
+
+#caracteristicas-equipo-tras-mejora{
+    resize: none;
+    overflow: auto;
+    height: 170px !important;
+}
+
+.file-path.validate.valid{
+    color: #fff !important;
+}
+
+input.datepicker, input.timepicker{
+    color: #fff;
+}
