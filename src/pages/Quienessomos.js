@@ -4,6 +4,7 @@ import izquierda from "../Imagenes/izquierdasomos.png";
 
 import jorge from "../Imagenes/quienes_somos/jorge.jpeg";
 import luis from "../Imagenes/quienes_somos/luis_fernando.jpeg";
+import rodrigo from "../Imagenes/quienes_somos/rodrigo.jpg";
 
 const Quienessomos = () => {
   return (
@@ -67,7 +68,7 @@ const Quienessomos = () => {
           <h4 className="subtexto-somos slide-in-animate centrar-text">
             Rodrigo: DIRECTOR OPERATIVO
           </h4>
-          <img src={izquierda} className="imagenes-staff zoom-on-load" />
+          <img src={rodrigo} className="imagenes-staff zoom-on-load" />
         </div>
       </div>
 
