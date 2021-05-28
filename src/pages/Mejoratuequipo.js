@@ -51,26 +51,6 @@ const Mejoratuequipo = () => {
           </div>
           <div className="col s12 m1 l2 hide-on-small-only"></div>
         </div>
-        {/*<div className="row">
-          <div className="col s12 m1 l2 hide-on-small-only"></div>
-          <div className="col s12 m5 l4">
-            <button
-              className="boton btn-mejora zoom-on-load"
-              onClick={(e) => showSeLoQueQuiero(e)}
-            >
-              <strong>Sé lo que quiero</strong>
-            </button>
-          </div>
-          <div className="col s12 m5 l4">
-            <button
-              className="boton btn-mejora zoom-on-load"
-              onClick={(e) => showBuscoOpciones(e)}
-            >
-              <strong>Busco opciones</strong>
-            </button>
-          </div>
-          <div className="col s12 m1 l2 hide-on-small-only"></div>
-        </div>*/}
       </div>
       <div className="col s12 m12 l12">
         <div id="form-mejora-tu-equipo" className="row form-mejora-1">

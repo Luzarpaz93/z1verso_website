@@ -84,7 +84,7 @@ class TabsMejora extends Component {
     if (this.checkEspecificaciones) {
       if (this.fechaLlamada && this.horaLlamada && this.detalleMejora) {
         let mensajeCompleto =
-          "El cliente quiere agendar una videollamada para:\n" +
+          "Un cliente quiere agendar una videollamada para:\n" +
           "Fecha: " +
           this.fechaLlamada +
           "\nHora: " +
@@ -118,22 +118,6 @@ class TabsMejora extends Component {
       } else {
         this.notify();
       }
-      //template_wfblos1
-      /*emailjs
-        .sendForm(
-          "service_uzqm4x4",
-          "template_wfblos1",
-          "#form-sin-caracteristicas",
-          "user_Sh6GL9McCN2ZjRzffcdQY"
-        )
-        .then(
-          function (response) {
-            console.log("SUCCESS! FORM", response.status, response.text);
-          },
-          function (error) {
-            console.log("FAILED... FORM", error);
-          }
-        );*/
     } else {
       if (
         this.tarjetaMadre &&
@@ -317,30 +301,6 @@ class TabsMejora extends Component {
                 encType="multipart/form-data"
                 method="post"
               >
-                {/*<div className={"col s12 m12 l12 " + this.state.showExtra}>
-                  <span className="white-text">
-                    Mándanos una imagen de tu equipo
-                  </span>
-                </div>
-                <div
-                  className={
-                    "file-field input-field col s12 m12 l12 " +
-                    this.state.showExtra
-                  }
-                >
-                  <div className="btn">
-                    <span>Imagen</span>
-                    <input
-                      type="file"
-                      name="Imagen_Equipo"
-                      accept="image/*"
-                      onChange={e => this.imageOnChange(e)}
-                    />
-                  </div>
-                  <div className="file-path-wrapper">
-                    <input className="file-path validate" type="text" />
-                  </div>
-                </div>*/}
                 <div className={"col s12 m12 l12 " + this.state.showExtra}>
                   <span className="white-text">Agenda una videollamada</span>
                 </div>
