@@ -4,6 +4,8 @@ import control from "../Imagenes/ControlGaleria.png";
 import linea from "../Imagenes/line.png";
 import "../pages/Creative.css";
 import TabsCreative from "../Tabs/TabsCreative.js";
+import galeria_2 from "../Imagenes/galeria/Z1Verso-2.jpg";
+import galeria_8 from "../Imagenes/galeria/Z1Verso-8.jpg";
 
 const Creative = () => {
   useLayoutEffect(() => {
@@ -57,8 +59,8 @@ const Creative = () => {
                 Galería
               </span>
               <img className="linea-galeria zoom-on-load" src={linea} />
-              <img className="control-galeria zoom-on-load" src={control} />
-              <img className="control-galeria zoom-on-load" src={control} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-creative" src={galeria_2} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-creative" src={galeria_8} />
             </div>
           </div>
         </div>

@@ -7,6 +7,10 @@ import linea from "../Imagenes/line.png";
 import diamante from "../Imagenes/diamante.png";
 import control from '../Imagenes/ControlGaleria.png';
 
+import galeria_9 from "../Imagenes/galeria/Z1Verso-9.jpg";
+import galeria_4 from "../Imagenes/galeria/Z1Verso-4.jpg";
+//Imagenes\galeria
+
 import "../pages/home.css";
 import derecha1 from "../Imagenes/derecha1.png";
 import derecha2 from "../Imagenes/derecha2.png";
@@ -101,8 +105,8 @@ const Home = () => {
                 Galería
               </span>
               <img className="linea-galeria zoom-on-load" src={linea} />
-              <img className="control-galeria zoom-on-load" src={control} />
-              <img className="control-galeria zoom-on-load" src={control} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-home" src={galeria_9} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-home" src={galeria_4} />
             </div>
           </div>
         </div>

@@ -271,3 +271,6 @@ i.icon-white {
 .centrar-text{
   text-align: center !important;
 }
+.rounded-img{
+  border-radius: 8px;
+}

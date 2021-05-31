@@ -4,6 +4,8 @@ import control from "../Imagenes/ControlGaleria.png";
 import linea from "../Imagenes/line.png";
 import TabsGaming from "../Tabs/TabsGaming.js";
 import M from "materialize-css/dist/js/materialize.min.js";
+import galeria_1 from "../Imagenes/galeria/Z1Verso-1.jpg";
+import galeria_3 from "../Imagenes/galeria/Z1Verso-3.jpg";
 
 import "../pages/Gaming.css";
 
@@ -55,8 +57,8 @@ const Gaming = () => {
                 Galería
               </span>
               <img className="linea-galeria zoom-on-load" src={linea} />
-              <img className="control-galeria zoom-on-load" src={control} />
-              <img className="control-galeria zoom-on-load" src={control} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-gaming" src={galeria_1} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-gaming" src={galeria_3} />
             </div>
           </div>
         </div>

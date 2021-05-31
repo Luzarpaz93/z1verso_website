@@ -3,6 +3,8 @@ import logo from "../Imagenes/Z1verso_Business_Blanco_B.svg";
 import control from "../Imagenes/ControlGaleria.png";
 import linea from "../Imagenes/line.png";
 import TabsBusiness from "../Tabs/TabsBusiness.js";
+import galeria_10 from "../Imagenes/galeria/Z1Verso-10.jpg";
+import galeria_11 from "../Imagenes/galeria/Z1Verso-11.jpg";
 
 import "../pages/Business.css";
 
@@ -57,8 +59,8 @@ const Business = () => {
                 Galería
               </span>
               <img className="linea-galeria zoom-on-load" src={linea} />
-              <img className="control-galeria zoom-on-load" src={control} />
-              <img className="control-galeria zoom-on-load" src={control} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-business" src={galeria_10} />
+              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-business" src={galeria_11} />
             </div>
           </div>
         </div>

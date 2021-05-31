@@ -424,3 +424,8 @@ button.control-arrow.control-prev.control-disabled{
     width: 100%;
     background-repeat: none !important;
 }
+
+.img-galeria-home{
+    margin-top: 4px;
+    margin-bottom: 8px;
+}

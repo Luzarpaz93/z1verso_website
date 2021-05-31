@@ -126,3 +126,8 @@ input[type=number] {
     height: 100%;
     max-height: 310px;
 }
+
+.img-galeria-creative{
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
