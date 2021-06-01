@@ -1,0 +1,37 @@
+footer.page-footer{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(298deg, rgba(113,2,94,1) 0%, rgba(166,14,81,1) 100%);
+}
+
+footer.page-footer  *{
+    margin: 0;
+    padding: 0;
+}
+
+footer.page-footer .container, footer.page-footer .footer-copyright{
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 9%;
+}
+
+.container.no-spacing{
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center
+    ;
+}
+
+body.business-background footer.page-footer{
+    background: linear-gradient(298deg, #3092A9, #394E71) !important;
+}
+
+body.gaming-background footer.page-footer{
+    background: linear-gradient(166deg, #62121F, rgba(179,12,12,1)) !important;
+}
+
+body.creative-background footer.page-footer{
+    background: linear-gradient(298deg, rgba(115,121,221,1) 0%, rgba(86,65,168,1) 100%) !important;
+ }

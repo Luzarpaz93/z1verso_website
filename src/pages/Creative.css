@@ -35,7 +35,7 @@
 .textoCenterCreative {
     left: 323px;
     top: 445px;
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -45,7 +45,7 @@
 }
 
 .tituloParrafo{
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -67,7 +67,7 @@
     .titulo-galeria{
         display: block;
         width: 100%;
-        font-family: Saira;
+        font-family: "Moby Regular";
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
@@ -128,6 +128,8 @@ input[type=number] {
 }
 
 .img-galeria-creative{
-    margin-top: 4px;
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 12px !important;
+    margin-left: auto;
+    margin-right: auto;
 }

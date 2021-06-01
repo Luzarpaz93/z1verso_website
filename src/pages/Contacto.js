@@ -133,62 +133,62 @@ const Contacto = ()=>{
 
     return (
       
-      <div class="row fondoform">
-        <div class="col s12 m12 l12">
+      <div className="row fondoform">
+        <div className="col s12 m12 l12">
         <ToastContainer 
           position="top-center"
           autoClose={5000} />
 
-            <div class="row">
+            <div className="row">
 
 
  
         
-            <div class="col s12 m6 l6">
+            <div className="col s12 m6 l6">
 
             <div className="contenedorcentral">
 
 
               <form >
-                <div class="row">
-                    <div class="col s6">
-                      <label for="last_name" className="titulocontactanos">   Contáctanos</label>
+                <div className="row">
+                    <div className="col s6">
+                      <label htmlFor="last_name" className="titulocontactanos">   Contáctanos</label>
 
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col s12">
-                      <label for="last_name" className="titulocaja">Nombre</label>
+                  <div className="row">
+                    <div className="col s12">
+                      <label htmlFor="last_name" className="titulocaja">Nombre</label>
                       <input type="text" name="name" className="caja"  onChange={e => setname(e.target.value)} />
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col s12">
-                      <label for="last_name" className="titulocaja">Correo electrónico</label>
+                  <div className="row">
+                    <div className="col s12">
+                      <label htmlFor="last_name" className="titulocaja">Correo electrónico</label>
                       <input type="text" name="correo" className="caja" onChange={e => setcorreo(e.target.value)}/>
                     </div>
                   </div>
 
 
-                  <div class="row">
-                    <div class="col s12">
-                      <label for="last_name" className="titulocaja">Teléfono de contacto</label>
+                  <div className="row">
+                    <div className="col s12">
+                      <label htmlFor="last_name" className="titulocaja">Teléfono de contacto</label>
                       <input type="text" name="telefono" className="caja" onChange={e => settelefono(e.target.value)}/>
                     </div>
                   </div>
 
 
-                  <div class="row">
-                    <div class="col s12">
-                      <label for="last_name" className="titulocaja">Asunto</label>
+                  <div className="row">
+                    <div className="col s12">
+                      <label htmlFor="last_name" className="titulocaja">Asunto</label>
                       <input type="text" name="asunto" className="caja" onChange={e => setasunto(e.target.value)}/>
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col s12">
-                      <label for="last_name" className="titulocaja">Mensaje</label>
+                  <div className="row">
+                    <div className="col s12">
+                      <label htmlFor="last_name" className="titulocaja">Mensaje</label>
                       <br></br>
                       <textarea className="cajamensaje" rows="40" cols="50" name="mensaje" onChange={e => setmensaje(e.target.value)} ></textarea>
                     </div>
@@ -201,27 +201,27 @@ const Contacto = ()=>{
 
 
 
-            <div class="col s12 m6 l6">
+            <div className="col s12 m6 l6">
 
 
-<div class="row">
-    <div class="col s6">
-      <label for="last_name" className="titulocontactanos"></label>
+<div className="row">
+    <div className="col s6">
+      <label htmlFor="last_name" className="titulocontactanos"></label>
 
     </div>
   </div>
-  <div class="row">
-    <div class="col s6">
+  <div className="row">
+    <div className="col s6">
       
         <ul>
       <li >
-      <div class="row">
-          <div class="col s3">
+      <div className="row">
+          <div className="col s3">
             <div className="redesspan">
               <MenuItem icon={<FiMapPin />}></MenuItem>
             </div>
           </div>
-          <div class="col s19 textoform">
+          <div className="col s19 textoform">
             Ubicación
           </div>
         </div>
@@ -232,14 +232,14 @@ const Contacto = ()=>{
 
 
         <li >
-      <div class="row">
-          <div class="col s3">
+      <div className="row">
+          <div className="col s3">
             <div className="redesspan">
                 <MenuItem icon={<FiMail />}>
                 </MenuItem>
             </div>
           </div>
-          <div class="col s9 textoform">
+          <div className="col s9 textoform">
                 correo@electroninicio.com
           </div>
         </div>
@@ -252,7 +252,7 @@ const Contacto = ()=>{
 
        <div className="divisor"></div>
     
-       <button  class="btnEnviarEmail" onClick={enviar}>Enviar</button>
+       <button  className="btnEnviarEmail" onClick={enviar}>Enviar</button>
     </div>
   </div>
 

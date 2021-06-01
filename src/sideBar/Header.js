@@ -112,7 +112,7 @@ const Header = () => {
                     Contacto &nbsp;&nbsp;
                   </a>
                 </MenuItem>
-                <MenuItem>
+                {/*<MenuItem>
                   <p className="center-align textohrf outer">
                     <span>Atención a clientes</span>
                     <p className="inner">
@@ -121,14 +121,14 @@ const Header = () => {
                       55 2691 3901
                     </p>
                   </p>
-                </MenuItem>
+                </MenuItem>*/}
               </Menu>
             )}
           </SidebarContent>
           <SidebarFooter className="encabezadoMenuResize">
             <Menu className="encabezadoMenu">
               <MenuItem icon={<FiMail />}>&nbsp;&nbsp;</MenuItem>
-              <MenuItem icon={<FiMapPin />}>&nbsp;&nbsp;</MenuItem>
+              {/*<MenuItem icon={<FiMapPin />}>&nbsp;&nbsp;</MenuItem>*/}
             </Menu>
           </SidebarFooter>
         </ProSidebar>

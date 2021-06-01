@@ -274,7 +274,7 @@ class TabsMejora extends Component {
               onChange={e => this.onChangeCantidadRam(e.target.value)}
             />
             <label htmlFor="cantidad-memoria-ram">
-              ¿Cuanta memoria RAM tiene tu equipo?*
+            ¿Cuánta memoria RAM tiene tu equipo?*
             </label>
           </div>
 

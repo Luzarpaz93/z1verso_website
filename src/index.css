@@ -1,3 +1,11 @@
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: Moby Regular;
+  src: url("./Fonts/MOBY_REG.TTF");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -97,13 +105,14 @@ nav {
 .titulo-galeria{
   display: block;
   width: 100%;
-  font-family: Saira;
+  font-family: "Moby Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
   text-align: center;
   color: #FFFFFF;
   margin-top: 110px !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .linea-galeria{
@@ -117,6 +126,7 @@ nav {
 .control-galeria{
   height: 230px;
   width: 100%;
+  max-width: 280px !important;
 }
 
 .no-padding{
@@ -244,6 +254,7 @@ i.icon-white {
 .pro-sidebar .pro-menu .pro-menu-item{
   width: 100%;
   display: block;
+  font-family: Saira;
 }
 
 .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item{

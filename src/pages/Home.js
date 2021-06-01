@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../Imagenes/logo2.png";
+import logo from "../Imagenes/Z1verso_Logo_Home.svg";
 import vinoculares from "../Imagenes/Vinoculares.png";
 import sombra from "../Imagenes/sombra.png";
 import cuete from "../Imagenes/cuete.png";
@@ -33,7 +33,7 @@ const Home = () => {
       <div className="row custom-flex">
         <div className="col s12 m8 l9">
           <div className="contenedorcentral">
-            <img src={logo} className="imagenLogo zoom-on-load" />
+            <img src={logo} className="zoom-on-load center-block logo-outline-size" />
             <br />
             <p className="textoCenter slide-in-animate justificar">
               Somos un equipo especializado en ensamblado personalizado de
@@ -100,7 +100,8 @@ const Home = () => {
               </Carousel>
             </div>*/}
           <div className="row">
-            <div className="col s8 offset-s2 m12 l12 no-padding">
+            <div className="col s2 hide-on-med-and-up"></div>
+            <div className="col s8 m12 l12 no-padding">
               <span className="titulo-galeria slide-in-animate-right">
                 Galería
               </span>
@@ -108,6 +109,7 @@ const Home = () => {
               <img className="control-galeria slide-in-animate-right rounded-img img-galeria-home" src={galeria_9} />
               <img className="control-galeria slide-in-animate-right rounded-img img-galeria-home" src={galeria_4} />
             </div>
+            <div className="col s2 hide-on-med-and-up"></div>
           </div>
         </div>
       </div>

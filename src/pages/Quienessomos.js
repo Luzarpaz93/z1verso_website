@@ -25,7 +25,7 @@ const Quienessomos = () => {
               Nuestra Historia
             </p>
             <img src={izquierda} className="imagenes-staff zoom-on-load" />
-            <p className="textoCenterSomos slide-in-animate-right text-shade-q center-align mt-r2">
+            <p className="textoCenterSomos slide-in-animate-right text-shade-q center-align mt-r2 centrar-text">
               Z1verso se formó con el propósito de vender equipos de alta
               calidad a un precio accesible. El nombre nace por la primera
               computadora llamada Z1, pensando en la variedad de equipos que se
@@ -41,7 +41,7 @@ const Quienessomos = () => {
 
       <div className="row somos-main-padding custom-flex mt-r2">
         <div className="col s12 m12 l12">
-          <h3 className="textoSomos centrar-text">¿Quienes Somos?</h3>
+          <h3 className="textoSomos centrar-text text-shade-q">¿Quienes Somos?</h3>
           <h4 className="subtexto-somos text-shade-q slide-in-animate-right centrar-text">
             Jorge: DIRECTOR DE FINANZAS
           </h4>
@@ -65,7 +65,7 @@ const Quienessomos = () => {
 
       <div className="row somos-main-padding custom-flex mt-r2">
         <div className="col s12 m12 l12">
-          <h4 className="subtexto-somos slide-in-animate centrar-text">
+          <h4 className="subtexto-somos slide-in-animate centrar-text text-shade-q">
             Rodrigo: DIRECTOR OPERATIVO
           </h4>
           <img src={rodrigo} className="imagenes-staff zoom-on-load" />
@@ -75,7 +75,7 @@ const Quienessomos = () => {
       <div className="row somos-main-padding custom-flex mt-r2">
         <div className="col s1 m1 l2 hide-on-small-only"></div>
         <div className="col s12 m10 l8 p-c-1">
-          <p className="textoCenterSomos slide-in-animate centrar-text">
+          <p className="textoCenterSomos slide-in-animate centrar-text text-shade-q">
             Licenciado en Matemáticas egresado de la Facultad de Ciencias
             (UNAM). Se dedicó a los esports semiprofesionalmente como jugador y
             como organizador de eventos. Su visión y apetito por el conocimiento
@@ -87,7 +87,7 @@ const Quienessomos = () => {
 
       <div className="row somos-main-padding custom-flex mt-r2">
         <div className="col s12 m12 l12">
-          <h4 className="subtexto-somos slide-in-animate-right centrar-text">
+          <h4 className="subtexto-somos slide-in-animate-right centrar-text text-shade-q">
             Luis Fernando: DIRECTOR ADMINISTRATIVO
           </h4>
           <img src={luis} className="imagenes-staff zoom-on-load" />
@@ -97,7 +97,7 @@ const Quienessomos = () => {
       <div className="row somos-main-padding custom-flex mt-r2">
         <div className="col s1 m1 l2 hide-on-small-only"></div>
         <div className="col s12 m10 l8 p-c-1">
-          <p className="textoCenterSomos slide-in-animate-right centrar-text">
+          <p className="textoCenterSomos slide-in-animate-right centrar-text text-shade-q">
             Maestro en Orientación Psicológica egresado de la Universidad
             Iberoamericana. Apasionado por los videojuegos y por la
             investigación, su visión humana de equidad busca el beneficio para

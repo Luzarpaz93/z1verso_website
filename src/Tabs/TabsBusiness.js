@@ -137,7 +137,7 @@ class TabsBusiness extends Component {
               id="nombre"
               type="text"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeNombreEmpresa(e.target.value)}
             />
             <label htmlFor="nombre">Nombre de la Empresa*</label>
@@ -150,7 +150,7 @@ class TabsBusiness extends Component {
               id="nombre"
               type="text"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeNombreContacto(e.target.value)}
             />
             <label htmlFor="nombre">Nombre del Contacto*</label>
@@ -163,7 +163,7 @@ class TabsBusiness extends Component {
               id="email"
               type="email"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeEmail(e.target.value)}
             />
             <label htmlFor="email">Email*</label>
@@ -187,20 +187,20 @@ class TabsBusiness extends Component {
               id="jegos"
               type="text"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeAreaTrabajo(e.target.value)}
             />
             <label htmlFor="juegos">Área de trabajo*</label>
           </div>
           <div
-            class="input-field col s12 m12 l12"
+            className="input-field col s12 m12 l12"
             style={{ margin: "none", padding: "8px" }}
           >
             <input
               id="presupuesto"
               type="number"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeNumeroEquipos(e.target.value)}
             />
             <label htmlFor="presupuesto">Número de Equipos*</label>
@@ -211,12 +211,12 @@ class TabsBusiness extends Component {
           >
             <textarea
               id="caracteristicas_adicionales"
-              class="materialize-textarea"
+              className="materialize-textarea"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               rows="6"
               cols="50"
-              placeholder="Tamaño equipo, luces rgb, que tenga wifi, colores del gabinete, cotizar mouse con colores del gabinete..."
+              placeholder="Tamaño equipo, luces RGB, que tenga wifi, colores del gabinete, cotizar mouse con colores del gabinete..."
               onChange={(e) => this.onChangeDetalle(e.target.value)}
             ></textarea>
             <label htmlFor="caracteristicas_adicionales">

@@ -4,7 +4,8 @@ import "./Navbar.css";
 import "../Social/Social";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
-import logo from "../Imagenes/logo2.png";
+import logo from "../Imagenes/Z1verso_Main_Logo_Blanco.svg";
+//Z1verso_Main_Sin_Texto logo2
 import SocialFlow from "../Social/Social";
 import homelateral from "../Imagenes/menuLateral.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -54,7 +55,7 @@ class Navbar extends Component {
       <div>
         <nav>
           <div className="nav-wrapper Navbar">
-            <a href="#!" className="brand-logo">
+            <a href="#!" className="">
               {" "}
               <img src={logo} className="iconLogo" />
             </a>
@@ -154,6 +155,12 @@ class Navbar extends Component {
                 >
                   <FontAwesomeIcon icon={faFacebook} size="1x" />
                 </a>
+                <a
+                  href="https://www.youtube.com/channel/UClR1kRWEgq2dFkF-X4qwWmQ"
+                  className="redes2"
+                >
+                  <FontAwesomeIcon icon={faYoutube} size="1x" />
+                </a>
               </p>
             </p>
           </li>
@@ -174,7 +181,7 @@ class Navbar extends Component {
           <li className="margenNavBAR">
             <a href="/contacto">Contacto</a>
           </li>
-          <li className="margenNavBAR">
+          {/*<li className="margenNavBAR">
             <p className="center-align white-text">
               <span>Atención a clientes</span>
               <p className="inner">
@@ -183,7 +190,7 @@ class Navbar extends Component {
                 55 2691 3901
               </p>
             </p>
-          </li>
+    </li>*/}
         </ul>
       </div>
     );

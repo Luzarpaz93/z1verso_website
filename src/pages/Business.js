@@ -23,10 +23,10 @@ const Business = () => {
 
   return (
     <React.Fragment>
-      <div class="row">
+      <div className="row">
         {/*<div class="col s12 m4 l2"></div>*/}
 
-        <div class="col s12 m8 l9">
+        <div className="col s12 m8 l9">
           {/*center */}
           <div className="contenedorcentral">
             <img src={logo} className="imagenLogoBusiness zoom-on-load logo-svg-proportions" />
@@ -44,17 +44,18 @@ const Business = () => {
               Equipos desde $6,000 pesos
             </p>
             <br />
-            <a href="#cotizar-business" class="botonBusiness zoom-on-load">
+            <a href="#cotizar-business" className="botonBusiness zoom-on-load">
               COTIZAR
             </a>
             <br />
-            <p className="flecha zoom-on-load"></p> *
+            <p className="flecha zoom-on-load"></p>
           </div>
         </div>
-        <div class="col s12 m4 l3 no-padding">
+        <div className="col s12 m4 l3 no-padding">
           {/*right */}
-          <div class="row">
-            <div class="col s8 offset-s2 m12 l12 no-padding">
+          <div className="row">
+            <div className="col s2 hide-on-med-and-up"></div>
+            <div className="col s8 m12 l12 no-padding">
               <span className="titulo-galeria slide-in-animate-right">
                 Galería
               </span>
@@ -62,6 +63,7 @@ const Business = () => {
               <img className="control-galeria slide-in-animate-right rounded-img img-galeria-business" src={galeria_10} />
               <img className="control-galeria slide-in-animate-right rounded-img img-galeria-business" src={galeria_11} />
             </div>
+            <div className="col s2 hide-on-med-and-up"></div>
           </div>
         </div>
       </div>

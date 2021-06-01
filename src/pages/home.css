@@ -80,7 +80,7 @@
 
     left: 323px;
     top: 445px;
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -96,7 +96,7 @@
     height: 58px;
     left: 560px;
     top: 675px;
-    font-family: Saira;
+    font-family: "Montserrat", "Space Mono";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -177,7 +177,7 @@ html {
 
 .textoCenterValores{
 
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -426,6 +426,9 @@ button.control-arrow.control-prev.control-disabled{
 }
 
 .img-galeria-home{
-    margin-top: 4px;
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 12px !important;
+    margin-left: auto;
+    margin-right: auto;
 }
+

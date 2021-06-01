@@ -15,7 +15,7 @@
 }
 
 .titulocaja{
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -30,7 +30,7 @@
     margin-top: 152px;
     color: white;
     text-decoration: underline;
-    font-family: Saira;
+    font-family: "Moby Regular";
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -52,7 +52,7 @@
 
 .textoform{
 
-    font-family: Saira;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -75,7 +75,7 @@
 .btnEnviar{
 
 
-font-family: Saira;
+font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
@@ -93,7 +93,7 @@ padding: 5px 60px;
 .btnEnviarEmail{
 
 
-    font-family: Saira;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;

@@ -146,7 +146,7 @@ class TabsCreative extends Component {
               id="nombre"
               type="text"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeNombre(e.target.value)}
             />
             <label htmlFor="nombre">Nombre*</label>
@@ -159,7 +159,7 @@ class TabsCreative extends Component {
               id="email"
               type="email"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeEmail(e.target.value)}
             />
             <label htmlFor="email">Email*</label>
@@ -173,7 +173,7 @@ class TabsCreative extends Component {
               id="jegos"
               type="text"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeProgramas(e.target.value)}
             />
             <label htmlFor="juegos">¿Qué programas usas normalmente?*</label>
@@ -190,10 +190,10 @@ class TabsCreative extends Component {
         </div>
         <div id="test-swipe-2" className="col s12 m12 l12 black">
           <div
-            class="input-field col s12 m12 l12"
+            className="input-field col s12 m12 l12"
             style={{ margin: "none", padding: "8px" }}
           >
-            <i class="material-icons prefix icon-white">paid</i>
+            <i className="material-icons prefix icon-white">paid</i>
             <select id="select-presupuesto" style={{color: "#ffffff"}}
             onChange={e => this.onChangePresupuesto(e.target.value)}>
               <option defaultValue="0" value="0">
@@ -221,7 +221,7 @@ class TabsCreative extends Component {
               id="jegos"
               type="text"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               onChange={(e) => this.onChangeUsoPc(e.target.value)}
             />
             <label htmlFor="juegos">Uso principal de la PC*</label>
@@ -232,16 +232,16 @@ class TabsCreative extends Component {
           >
             <textarea
               id="caracteristicas_adicionales"
-              class="materialize-textarea"
+              className="materialize-textarea"
               className="white-text"
-              autocomplete="off"
+              autoComplete="off"
               rows="6"
               cols="50"
-              placeholder="Tamaño equipo, luces rgb, que tenga wifi, colores del gabinete, cotizar mouse con colores del gabinete..."
+              placeholder="Tamaño equipo, luces RGB, que tenga wifi, colores del gabinete, cotizar mouse con colores del gabinete..."
               onChange={(e) => this.onChangeDetalle(e.target.value)}
             ></textarea>
             <label htmlFor="caracteristicas_adicionales">
-              Caracteristicas adicionales*
+            Características adicionales*
             </label>
           </div>
           <div className="col s12 m12 l12">

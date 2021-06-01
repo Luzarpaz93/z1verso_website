@@ -41,7 +41,7 @@
 .textoCenterGaming {
     left: 323px;
     top: 445px;
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -53,7 +53,7 @@
 }
 
 .tituloParrafo{
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -110,6 +110,8 @@ input[type=number] {
 }
 
 .img-galeria-gaming{
-    margin-top: 4px;
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 12px !important;
+    margin-left: auto;
+    margin-right: auto;
 }

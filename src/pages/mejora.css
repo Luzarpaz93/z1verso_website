@@ -1,5 +1,5 @@
 .mejora{
-    font-family: Saira;
+    font-family: "Space Mono";
 font-style: normal;
 font-weight: 500;
 font-size: 40px;
@@ -21,7 +21,7 @@ color: #FFFFFF;
 
 
 .mejoraArmado{
-    font-family: Saira;
+    font-family: "Space Mono";
 font-style: normal;
 font-weight: 600;
 font-size: 48px;
@@ -61,7 +61,7 @@ color: #FFFFFF;
     margin: 0;
     color: white;
     text-decoration: underline;
-    font-family: Saira;
+    font-family: "Moby Regular";
     font-style: normal;
     font-weight: 500;
     font-size: 6.3vh/*40px*/;
@@ -118,7 +118,7 @@ color: #FFFFFF;
     }
   }
 
-  .textoCenterSomos{
+  .textoCenterSomosMejora{
       padding-left: 15%;
   }
 
@@ -132,7 +132,7 @@ color: #FFFFFF;
     margin: 0;
     color: white;
     text-decoration: none;
-    font-family: Saira;
+    font-family: "Space Mono";
     font-style: normal;
     font-weight: 300;
     font-size: 3.7vh;

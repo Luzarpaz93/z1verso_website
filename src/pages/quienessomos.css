@@ -27,7 +27,7 @@ h1{
     /*margin-top: 120px;*/
     color: white;
     text-decoration: underline ;
-    font-family: Saira;
+    font-family: "Moby Regular";
     font-style: normal;
     font-weight: 500;
     font-size: /*40px*/6.3vh;
@@ -39,7 +39,7 @@ h1{
 
     /*left: 659px;
     top: 445px;*/
-    font-family: Saira;
+    font-family:  "Space Mono", "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: /*24px*/3.6vh;
@@ -127,7 +127,7 @@ h1{
     text-align: center;
     color: white;
     text-decoration: none;
-    font-family: Saira;
+    font-family: "Moby Regular";
     font-style: normal;
     font-weight: 400;
     font-size: /*40px*/5.0vh;

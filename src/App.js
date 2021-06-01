@@ -20,6 +20,7 @@ import Sidebar from "./Navbar/Sidebar";
 import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
 import WhatsappButtonSM from "./Social/WhatsAppButtonSM";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
+          <Footer />
         </div>
       </Router>
       <WhatsappButtonSM />
