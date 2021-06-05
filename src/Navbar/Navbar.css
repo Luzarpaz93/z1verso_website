@@ -129,7 +129,7 @@
   }
 
   .navbarcenter{
-      margin-left: 412px;
+      margin-left: 212px;
   }
 
 @media screen and (max-width: 960px) {
@@ -246,7 +246,7 @@ body {
     }
 
     .navbarcenter{
-        margin-left: 212px;
+        margin-left: 112px;
     }
 
     .margenRedes{
@@ -301,5 +301,17 @@ ul.inline-social{
 
 ul.inline-social li{
     display: inline;
+}
+
+.container-logo-navbar-small{
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+
+#icon-logo-navbar{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 

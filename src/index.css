@@ -285,3 +285,46 @@ i.icon-white {
 .rounded-img{
   border-radius: 8px;
 }
+
+.container-img-galeria{
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-galeria-aside{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-shade-q{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/*@media all and (max-width: 602px){
+
+  body {
+    background: url("../src/Imagenes/fondo.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  body.gaming-background{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../src/Imagenes/Optimized-FondoGaming.png") no-repeat center center !important;
+    background-size: cover !important;
+  }
+
+  body.business-background{
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("../src/Imagenes/FondoBusiness_1440x900.png") no-repeat center center !important;
+    background-size: cover !important;
+  }
+  
+  body.creative-background{
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("../src/Imagenes/Fondos_Media_Query/FondoCreative.png") no-repeat center center !important;
+    background-size: cover !important;
+  }
+}*/

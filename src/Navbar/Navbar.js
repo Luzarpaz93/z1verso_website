@@ -55,10 +55,10 @@ class Navbar extends Component {
       <div>
         <nav>
           <div className="nav-wrapper Navbar">
-            <a href="#!" className="">
+           {/*<a href="#!" className="">
               {" "}
               <img src={logo} className="iconLogo" />
-            </a>
+            </a>*/}
 
             <a href="#" data-target="mobile-demo" className="sidenav-trigger right">
               <i className="material-icons">menu</i>
@@ -70,6 +70,11 @@ class Navbar extends Component {
               />
             </a>
             <ul className="left hide-on-med-and-down navbarcenter">
+            <li className="margenNavBAR">
+                <div className="container-logo-navbar-small">
+                  <img src={logo} id="icon-logo-navbar" />
+                </div>
+              </li>
               <li className="margenNavBAR">
                 <a href="/">HOME</a>
               </li>
@@ -150,7 +155,7 @@ class Navbar extends Component {
                   <FontAwesomeIcon icon={faTwitter} size="1x" />
                 </a>
                 <a
-                  href="https://www.facebook.com/learnbuildteach/"
+                  href="https://web.facebook.com/z1verso"
                   className="redes2"
                 >
                   <FontAwesomeIcon icon={faFacebook} size="1x" />

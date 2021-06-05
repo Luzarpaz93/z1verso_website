@@ -60,8 +60,13 @@ const Creative = () => {
                 Galería
               </span>
               <img className="linea-galeria zoom-on-load" src={linea} />
-              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-creative" src={galeria_2} />
-              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-creative" src={galeria_8} />
+
+              <div className="container-img-galeria slide-in-animate-right">
+                <img className="rounded-img img-galeria-aside" src={galeria_2} />
+              </div>
+              <div className="container-img-galeria slide-in-animate-right">
+                <img className="rounded-img img-galeria-aside" src={galeria_8} />
+              </div>
             </div>
             <div className="col s2 hide-on-med-and-up"></div>
           </div>

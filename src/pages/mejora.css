@@ -1,12 +1,12 @@
 .mejora{
     font-family: "Space Mono";
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 63px;
-text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 63px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .imagenLogoMejora{
@@ -22,13 +22,13 @@ color: #FFFFFF;
 
 .mejoraArmado{
     font-family: "Space Mono";
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 76px;
-text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 76px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .logoderecha{
@@ -64,8 +64,8 @@ color: #FFFFFF;
     font-family: "Moby Regular";
     font-style: normal;
     font-weight: 500;
-    font-size: 6.3vh/*40px*/;
-    line-height: 10.1vh/*63px*/;
+    font-size: 40px;
+    line-height: 63px;
     text-align: center;
 }
 
@@ -135,7 +135,7 @@ color: #FFFFFF;
     font-family: "Space Mono";
     font-style: normal;
     font-weight: 300;
-    font-size: 3.7vh;
+    font-size: 24px;
     line-height: 5vh;
     padding: 20px;
   }

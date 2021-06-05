@@ -35,3 +35,10 @@ body.gaming-background footer.page-footer{
 body.creative-background footer.page-footer{
     background: linear-gradient(298deg, rgba(115,121,221,1) 0%, rgba(86,65,168,1) 100%) !important;
  }
+
+ .footer-copyright .container.no-spacing, .p-center-f{
+     width: 100%;
+     display: block;
+     margin: auto;
+     text-align: center;
+ }

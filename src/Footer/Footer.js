@@ -14,7 +14,7 @@ const Footer = () => {
       <footer className="page-footer">
         <div className="container">
           <div className="row">
-            <div className="col l2 m3 s12 center-align">
+            <div className="col l2 m3 s12 center-align p-center-f">
               <br className="hide-on-small-only" />
               <h5 className="white-text">Contacto</h5>
               <br className="hide-on-med-and-up" />

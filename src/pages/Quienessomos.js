@@ -19,12 +19,14 @@ const Quienessomos = () => {
           </div>
         </div>*/}
         <div className="col s1 m1 l2 hide-on-small-only"></div>
-        <div class="col s12 m10 l8">
+        <div className="col s12 m10 l8">
           <div className="contenedorsomos">
             <p className="textoSomos slide-in-animate-right text-shade-q">
               Nuestra Historia
             </p>
-            <img src={izquierda} className="imagenes-staff zoom-on-load" />
+            <div className="image-start-container">
+              <img src={izquierda} className="imagenes-staff zoom-on-load" />
+            </div>
             <p className="textoCenterSomos slide-in-animate-right text-shade-q center-align mt-r2 centrar-text">
               Z1verso se formó con el propósito de vender equipos de alta
               calidad a un precio accesible. El nombre nace por la primera
@@ -41,11 +43,17 @@ const Quienessomos = () => {
 
       <div className="row somos-main-padding custom-flex mt-r2">
         <div className="col s12 m12 l12">
-          <h3 className="textoSomos centrar-text text-shade-q">¿Quienes Somos?</h3>
+          <h3 className="centrar-text text-shade-q">
+          <span className="question-span">¿</span>
+            <span className="textoSomos">Quienes Somos</span>
+            <span className="question-span">?</span>  
+          </h3>
           <h4 className="subtexto-somos text-shade-q slide-in-animate-right centrar-text">
             Jorge: DIRECTOR DE FINANZAS
           </h4>
-          <img src={jorge} className="imagenes-staff zoom-on-load" />
+          <div className="images-staff-container">
+            <img src={jorge} className="imagenes-staff zoom-on-load" />
+          </div>
         </div>
       </div>
 
@@ -68,7 +76,9 @@ const Quienessomos = () => {
           <h4 className="subtexto-somos slide-in-animate centrar-text text-shade-q">
             Rodrigo: DIRECTOR OPERATIVO
           </h4>
-          <img src={rodrigo} className="imagenes-staff zoom-on-load" />
+          <div className="images-staff-container">
+            <img src={rodrigo} className="imagenes-staff zoom-on-load" />
+          </div>
         </div>
       </div>
 
@@ -90,7 +100,9 @@ const Quienessomos = () => {
           <h4 className="subtexto-somos slide-in-animate-right centrar-text text-shade-q">
             Luis Fernando: DIRECTOR ADMINISTRATIVO
           </h4>
-          <img src={luis} className="imagenes-staff zoom-on-load" />
+          <div className="images-staff-container">
+            <img src={luis} className="imagenes-staff zoom-on-load" />
+          </div>
         </div>
       </div>
 

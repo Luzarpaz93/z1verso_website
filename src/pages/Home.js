@@ -106,8 +106,13 @@ const Home = () => {
                 Galería
               </span>
               <img className="linea-galeria zoom-on-load" src={linea} />
-              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-home" src={galeria_9} />
-              <img className="control-galeria slide-in-animate-right rounded-img img-galeria-home" src={galeria_4} />
+
+              <div className="container-img-galeria slide-in-animate-right">
+                <img className="rounded-img img-galeria-aside" src={galeria_9} />
+              </div>
+              <div className="container-img-galeria slide-in-animate-right">
+                <img className="rounded-img img-galeria-aside" src={galeria_4} />
+              </div>
             </div>
             <div className="col s2 hide-on-med-and-up"></div>
           </div>
