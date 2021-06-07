@@ -99,9 +99,9 @@ const Home = () => {
                 </div>
               </Carousel>
             </div>*/}
-          <div className="row">
-            <div className="col s2 hide-on-med-and-up"></div>
-            <div className="col s8 m12 l12 no-padding">
+          <div className="row no-padding no-margin">
+            
+            <div className="col s12 m12 l12 no-padding no-margin">
               <span className="titulo-galeria slide-in-animate-right">
                 Galería
               </span>
@@ -114,7 +114,7 @@ const Home = () => {
                 <img className="rounded-img img-galeria-aside" src={galeria_4} />
               </div>
             </div>
-            <div className="col s2 hide-on-med-and-up"></div>
+            
           </div>
         </div>
       </div>

@@ -304,9 +304,18 @@ ul.inline-social li{
 }
 
 .container-logo-navbar-small{
-    height: 100px;
-    width: 100px;
+    height: 58px;
+    width: 58px;
     display: block;
+}
+
+.container-logo-navbar-center-absolute{
+    height: 58px;
+    width: 58px;
+    display: block;
+    position: absolute;
+    left: calc(50% - 32px);
+    top: 4px;
 }
 
 #icon-logo-navbar{

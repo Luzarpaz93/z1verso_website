@@ -4,7 +4,7 @@ import "./Navbar.css";
 import "../Social/Social";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
-import logo from "../Imagenes/Z1verso_Main_Logo_Blanco.svg";
+import logo from "../Imagenes/Z1verso1_50x50pxF01.svg";
 //Z1verso_Main_Sin_Texto logo2
 import SocialFlow from "../Social/Social";
 import homelateral from "../Imagenes/menuLateral.png";
@@ -59,7 +59,9 @@ class Navbar extends Component {
               {" "}
               <img src={logo} className="iconLogo" />
             </a>*/}
-
+            <div className="container-logo-navbar-center-absolute hide-on-large-only">
+                  <img src={logo} id="icon-logo-navbar" />
+            </div>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger right">
               <i className="material-icons">menu</i>
             </a>

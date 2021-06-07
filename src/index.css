@@ -116,11 +116,13 @@ nav {
 }
 
 .linea-galeria{
-  margin-left: 1% !important;
-  margin-right: 1% !important;
-  margin-bottom: 4vh !important;
   padding: 6px !important;
   width: 100%;
+  max-width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
 }
 
 .control-galeria{
@@ -131,6 +133,10 @@ nav {
 
 .no-padding{
   padding: 0 !important;
+}
+
+.no-margin{
+  margin: 0 !important;
 }
 
 .pointer{
