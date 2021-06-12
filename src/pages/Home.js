@@ -37,7 +37,7 @@ const Home = () => {
             <br />
             <p className="textoCenter slide-in-animate justificar">
               Somos un equipo especializado en ensamblado personalizado de
-              computadpras para distintos sectores empresariales y particulares 
+              computadoras para distintos sectores empresariales y particulares 
               dedicados al diseño o a la industria de videojuegos.
             </p>
             <br />
