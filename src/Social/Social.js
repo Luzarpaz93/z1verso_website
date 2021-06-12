@@ -60,7 +60,7 @@ export default function SocialFlow() {
       
     {/*facebook */}
         <a
-          href="https://www.facebook.com/learnbuildteach/"
+          href="https://www.facebook.com/z1verso"
           className={name}
         >
           <FontAwesomeIcon icon={faFacebook} size="1x"  />

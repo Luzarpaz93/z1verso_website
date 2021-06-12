@@ -1,28 +1,29 @@
 import React from 'react';
 import '../pages/quienessomos.css'
-import izquierda from '../Imagenes/google1.png';
+import izquierda from '../Imagenes/Quetzal (1).png';
 
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+// import Carousel from '@brainhubeu/react-carousel';
+// import '@brainhubeu/react-carousel/lib/style.css';
 
 
 
 const Casosexito = ()=>{
-
+  
     
     return (
         <div class="row">
                 <div class="row">
                      <div class="col s12">
                          <div className="tama">
-                            <Carousel
+                         <img src={izquierda} className="logos"/>
+                            {/* <Carousel
                                 slidesPerPage={2}
                                 slidesPerScroll={2}
                                 animationSpeed={1500}
                                 autoPlay={2000}
                                 stopAutoPlayOnHover
                                 offset={50}
-                                itemWidth={250}
+                                itemWidth={100}
                                 clickToChange
                                 centered
                                 infinite
@@ -35,7 +36,14 @@ const Casosexito = ()=>{
                                     <img src={izquierda} />
                                     <img src={izquierda} />
                                     <img src={izquierda} />
-                             </Carousel>
+                                    {/* <img src={izquierda} />
+                                    <img src={izquierda} />
+                                    <img src={izquierda} />
+                                    <img src={izquierda} />
+                                    <img src={izquierda} />
+                                    <img src={izquierda} />
+                                    <img src={izquierda} />  
+                             </Carousel>*/}
 
                          </div>
               
@@ -47,16 +55,10 @@ const Casosexito = ()=>{
                                 Nuestros casos de éxito
                             </p>
                             <p className="textoCentercasos slide-in-animate justificar">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                Estas son las empresa que hemos apoyado en ensamblado de computadoras que se adecuan a las necesidades
+                                de su negocio. Son nuestros mejores referentes para la calidad de nuestro trabajo. 
                             </p>
                             <br/> 
-                            <p className="textoCentercasos slide-in-animate justificar">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            </p>
 
                      </div>
                 </div>

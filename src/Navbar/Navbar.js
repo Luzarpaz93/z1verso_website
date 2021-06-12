@@ -157,7 +157,7 @@ class Navbar extends Component {
                   <FontAwesomeIcon icon={faTwitter} size="1x" />
                 </a>
                 <a
-                  href="https://web.facebook.com/z1verso"
+                  href="https://www.facebook.com/z1verso"
                   className="redes2"
                 >
                   <FontAwesomeIcon icon={faFacebook} size="1x" />

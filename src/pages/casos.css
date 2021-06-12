@@ -1,4 +1,4 @@
-.textocasos{
+    .textocasos{
     text-align: center;
     margin-top: 152px;
     color: white;
@@ -11,7 +11,18 @@
     text-align: center;
 }
 
+.logos{
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    @media screen (max-width:600px) {
+        margin-top:40vh;
+        
+    }
 
+}
 .textoCentercasos{
 
     left: 659px;
@@ -29,6 +40,8 @@
 
 .tama{
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -40,7 +53,11 @@
     }
 
     .tama{
-        margin-top: -200px;
+        
+        @media screen (max-width:600px) {
+            margin-top:30vh;
+            
+        }
     }
 
     .textocasos {
