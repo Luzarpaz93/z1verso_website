@@ -60,10 +60,10 @@ class TabsMejora extends Component {
       this.notify_send_success();
       emailjs
         .send(
-          "service_uzqm4x4",
-          "template_2r31rfd",
+          "service_kdek1nr",
+          "template_qm6b081",
           templateParams,
-          "user_Sh6GL9McCN2ZjRzffcdQY"
+          "user_fJ9MtftfEt8hTHs1pMa2A"
         )
         .then(
           response => {
@@ -100,10 +100,10 @@ class TabsMejora extends Component {
 
         emailjs
           .send(
-            "service_uzqm4x4",
-            "template_2r31rfd",
+            "service_kdek1nr",
+            "template_qm6b081",
             templateParams,
-            "user_Sh6GL9McCN2ZjRzffcdQY"
+            "user_fJ9MtftfEt8hTHs1pMa2A"
           )
           .then(
             response => {
@@ -143,10 +143,10 @@ class TabsMejora extends Component {
 
         emailjs
           .send(
-            "service_uzqm4x4",
-            "template_2r31rfd",
+            "service_kdek1nr",
+            "template_qm6b081",
             templateParams,
-            "user_Sh6GL9McCN2ZjRzffcdQY"
+            "user_fJ9MtftfEt8hTHs1pMa2A"
           )
           .then(
             response => {
