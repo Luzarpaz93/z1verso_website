@@ -100,7 +100,7 @@ const Contacto = ()=>{
     
       };
     
-      emailjs.send('service_uzqm4x4','template_2r31rfd', templateParams, 'user_Sh6GL9McCN2ZjRzffcdQY')
+      emailjs.send('service_kdek1nr','template_qm6b081', templateParams, 'user_fJ9MtftfEt8hTHs1pMa2A')
       .then((response) => {
          console.log('SUCCESS!', response.status, response.text);
       }, (err) => {
