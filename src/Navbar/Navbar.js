@@ -110,6 +110,9 @@ class Navbar extends Component {
             <a href="/creative">CREATIVE</a>
           </li>
           <li className="margenNavBAR">
+            <a href="/mejoratuequipo">MEJORA TU EQUIPO</a>
+          </li>
+          <li className="margenNavBAR">
             <ul className="collapsible">
               <li>
                 <div className="collapsible-header nav-bar-text hide-on-med-and-up">
@@ -125,9 +128,6 @@ class Navbar extends Component {
                     </li>
                     <li className="margenNavBAR">
                       <a href="/casosdeexito">Casos de éxito</a>
-                    </li>
-                    <li className="margenNavBAR">
-                      <a href="/mejoratuequipo">Mejora tu equipo</a>
                     </li>
                     <li className="margenNavBAR">
                       <a href="/contacto">Contacto</a>
