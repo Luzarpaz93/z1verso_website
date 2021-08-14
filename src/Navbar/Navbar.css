@@ -1,3 +1,7 @@
+iframe {
+    max-width: 100%;
+    height: auto;
+}
 .NavbarItems {
     /*background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%);*/
     background: black;
@@ -120,7 +124,6 @@
 
   .iconos{
     float: right;
-    margin-right: 500px;
   }
 
   .margenNavBAR{
@@ -250,7 +253,7 @@ body {
     }
 
     .margenRedes{
-        position: absolute  !important;
+        /* position: absolute  !important; */
         right: 28%;
     }
 

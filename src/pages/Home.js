@@ -33,7 +33,10 @@ const Home = () => {
       <div className="row custom-flex">
         <div className="col s12 m8 l9">
           <div className="contenedorcentral">
-            <img src={logo} className="zoom-on-load center-block logo-outline-size" />
+          <div class="embed-container">
+          <iframe src="https://res.cloudinary.com/djlajcfkh/video/upload/v1628913132/Video_Introducci%C3%B3n_Z1_IG_adhqk6.mp4" frameborder="0" allowfullscreen></iframe>
+          </div>
+            {/* <img src={logo} className="zoom-on-load center-block logo-outline-size" /> */}
             <br />
             <p className="textoCenter slide-in-animate justificar">
               Somos un equipo especializado en ensamblado personalizado de
@@ -42,11 +45,11 @@ const Home = () => {
             </p>
             <br />
             <a
-              href="#conocemas"
+              href="#procesocompra"
               className="boton zoom-on-load"
               onClick={() => setAnimate({ section1: 1, section2: 0 })}
             >
-              Conoce más
+              Conoce el proceso
             </a>
             <br />
             <a
@@ -58,9 +61,17 @@ const Home = () => {
               <p className="flecha zoom-on-load"></p>
             </a>
           </div>
+          <p
+              className="tituloParrafo stateful-slide-left"
+              slide={animate.section1}
+            >
+              Proceso de compra
+            </p>
+            <div class="embed-container">
+            <iframe src="https://res.cloudinary.com/djlajcfkh/video/upload/v1628913140/Proceso_de_ventas_Z1_ujfuo6.mp4" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
-
-        <div className="col s12 m4 l3">
+        {/* <div className="col s12 m4 l3"> */}
           {/*<div className="contenedorImagenesHome">
               <Carousel
                 slidesPerPage={2}
@@ -99,7 +110,7 @@ const Home = () => {
                 </div>
               </Carousel>
             </div>*/}
-          <div className="row no-padding no-margin">
+          {/* <div className="row no-padding no-margin">
             
             <div className="col s12 m12 l12 no-padding no-margin">
               <span className="titulo-galeria slide-in-animate-right">
@@ -115,14 +126,14 @@ const Home = () => {
               </div>
             </div>
             
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
 
       {/*segundo row */}
       <div className="row" id="conocemas">
         <div className="col s12 m6 l6">
-          <div className="contenedorcentral">
+          <div className="contenedorvision">
             <p
               className="tituloParrafo stateful-slide-left"
               slide={animate.section1}
@@ -163,7 +174,7 @@ const Home = () => {
         </div>
 
         <div className="col s12 m6 l6">
-          <div className="contenedorcentral">
+          <div className="contenedorvision">
             <img
               src={cuete}
               className="cuete hide-on-small-only stateful-zoom"
@@ -219,7 +230,7 @@ const Home = () => {
       {/*valores*/}
       <div className="row custom-flex" id="valores">
         <div className="col s12 m7 l7">
-          <div className="contenedorcentral">
+          <div className="contenedorvision">
             <p
               className="tituloParrafo stateful-slide-left"
               slide={animate.section2}
@@ -299,6 +310,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    
+    
   );
 };
 

@@ -89,8 +89,11 @@ class Navbar extends Component {
               <li className="margenNavBAR">
                 <a href="/creative">CREATIVE</a>
               </li>
+              <li className="margenNavBAR">
+              <a href="/mejoratuequipo">MEJORA TU EQUIPO</a>
+            </li>
             </ul>
-            <div className="iconos">
+            <div className="iconos" style={{paddingLeft:"5vh"}}>
               <SocialFlow />
             </div>
           </div>
