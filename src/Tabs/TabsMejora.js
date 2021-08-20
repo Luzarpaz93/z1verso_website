@@ -49,11 +49,16 @@ class TabsMejora extends Component {
   }
 
   enviarSeQueQuieroClick() {
-    if (this.piezasNecesariasCliente) {
+    if (this.piezasNecesariasCliente && this.Email && this.Nombre) {
       let mensajeCompleto =
-        "Piezas solicitadas: " + this.piezasNecesariasCliente;
+      "Nombre: " +
+      this.Nombre 
+      + "\nCorreo eléctronico: " 
+      +  this.Email +
+        "Piezas solicitadas: " 
+      + this.piezasNecesariasCliente;
       const templateParams = {
-        from_name: "Cliente",
+        from_name: this.Nombre,
         message: mensajeCompleto,
         to_name: "Ziverso"
       };
@@ -81,10 +86,13 @@ class TabsMejora extends Component {
   }
 
   enviarBuscoOpcionesClick() {
-    if (this.checkEspecificaciones) {
-      if (this.fechaLlamada && this.horaLlamada && this.detalleMejora) {
+    if (this.checkEspecificaciones && this.Nombre && this.Email) {
+      if (this.fechaLlamada && this.horaLlamada && this.detalleMejora && this.Nombre && this.Email) {
         let mensajeCompleto =
-          "Un cliente quiere agendar una videollamada para:\n" +
+          "Un cliente quiere agendar una videollamada para:\n" + "Nombre: " +
+          this.Nombre 
+          + "\nCorreo eléctronico: " 
+          +  this.Email +
           "Fecha: " +
           this.fechaLlamada +
           "\nHora: " +
@@ -93,7 +101,7 @@ class TabsMejora extends Component {
           this.detalleMejora;
 
         const templateParams = {
-          from_name: "Cliente",
+          from_name: this.Nombre,
           message: mensajeCompleto,
           to_name: "Ziverso"
         };
@@ -123,9 +131,13 @@ class TabsMejora extends Component {
         this.tarjetaMadre &&
         this.cantidadRAM &&
         this.sizeGabinete &&
-        this.detalleMejora
+        this.detalleMejora &&
+        this.Nombre && this.Email
       ) {
         let mensajeCompleto =
+        "Nombre: " +
+          this.Nombre + "\nCorreo eléctronico: " +
+          this.Email +
           "Tarjeta Madre: " +
           this.tarjetaMadre +
           "\nCantidad de memoria RAM: " +
@@ -136,7 +148,7 @@ class TabsMejora extends Component {
           this.detalleMejora;
 
         const templateParams = {
-          from_name: "Cliente",
+          from_name: this.Nombre,
           message: mensajeCompleto,
           to_name: "Ziverso"
         };
@@ -195,6 +207,13 @@ class TabsMejora extends Component {
   horaLlamadaOnChange(hora) {
     this.horaLlamada = hora;
   }
+  onChangeNombre(nombre) {
+    this.Nombre = nombre;
+  }
+
+  onChangeEmail(mail) {
+    this.Email = mail;
+  }
 
   render() {
     return (
@@ -220,6 +239,7 @@ class TabsMejora extends Component {
             className="input-field col s12 m12 l12"
             style={{ margin: "20px 0 0 0", padding: "8px" }}
           >
+      
             <textarea
               id="necesito-estas-piezas"
               className="materialize-textarea"
@@ -233,7 +253,32 @@ class TabsMejora extends Component {
               Necesito estas piezas*
             </label>
           </div>
-
+          <div
+            className="input-field col s12 m12 l12"
+            style={{ margin: "none", padding: "8px" }}
+          >
+          <input
+              id="nombre"
+              type="text"
+              className="white-text"
+              autoComplete="off"
+              onChange={e => this.onChangeNombre(e.target.value)}
+            />
+            <label htmlFor="nombre">Nombre*</label>
+            </div>
+            <div
+            className="input-field col s12 m12 l12"
+            style={{ margin: "none", padding: "8px" }}
+          >
+            <input
+              id="email"
+              type="email"
+              className="white-text"
+              autoComplete="off"
+              onChange={e => this.onChangeEmail(e.target.value)}
+            />
+            <label htmlFor="email">Email*</label>
+            </div>
           <div className="col s12 m12 l12">
             <button
               className="botonGaming pointer center-block"
@@ -244,6 +289,32 @@ class TabsMejora extends Component {
           </div>
         </div>
         <div id="test-swipe-2" className="col s12 m12 l12 black">
+        <div
+            className="input-field col s12 m12 l12"
+            style={{ margin: "none", padding: "8px" }}
+          >
+          <input
+              id="nombre"
+              type="text"
+              className="white-text"
+              autoComplete="off"
+              onChange={e => this.onChangeNombre(e.target.value)}
+            />
+            <label htmlFor="nombre">Nombre*</label>
+            </div>
+            <div
+            className="input-field col s12 m12 l12"
+            style={{ margin: "none", padding: "8px" }}
+          >
+            <input
+              id="email"
+              type="email"
+              className="white-text"
+              autoComplete="off"
+              onChange={e => this.onChangeEmail(e.target.value)}
+            />
+            <label htmlFor="email">Email*</label>
+            </div>
           <div
             className={"input-field col s12 m12 l12 " + this.state.showDefault}
             style={{ margin: "none", padding: "8px" }}
