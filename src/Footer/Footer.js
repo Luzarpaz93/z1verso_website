@@ -29,6 +29,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="col l7 m5 hide-on-small-onlycenter-align"></div>
+            <a href="/avisodeprivacidad">Aviso de Privacidad</a>
           </div>
         </div>
         <div className="footer-copyright center-align">

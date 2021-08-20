@@ -1,0 +1,183 @@
+.mejora{
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 63px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.imagenLogoMejora{
+    
+    width: 218px;
+    height: 287px;
+    left: 527px;
+    top: 137px;
+
+ 
+}
+.contenedorVideo{
+    margin-top:20px;
+}
+
+.mejoraArmado{
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 76px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.logoderecha{
+
+    margin-top: 183px;
+}
+
+.botonQuien{
+    float: right;
+    margin-right: -100px;
+    width: 257px;
+    text-align: center;
+}
+
+.flechaMejora{
+    width: 48px;
+    height: 48px;
+    margin-top: 80px !important;
+    background-image: url("../Imagenes/hacia-abajo.png");
+    background-repeat: no-repeat;
+    margin: auto;
+    float: right;
+    margin-right: -150px;
+
+}
+
+.textoSomosmejora{
+    text-align: center;
+    /*margin-top: 120px;*/
+    margin: 0;
+    color: white;
+    text-decoration: underline;
+    font-family: "Moby Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 63px;
+    text-align: center;
+}
+
+.logoderechaMejora{
+    margin-top: 183px;
+}
+
+@media screen and (max-width: 768px) {
+    .flechaMejora{
+        float: none;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    /*.textoSomosmejora {
+       margin-top: -200px;       
+    }*/
+    .botonQuien {
+        margin-left: auto !important;
+        display: flex !important;
+        float: none;
+        /*margin-right: 107px;*/
+    }
+
+    .flechaMejora{
+        margin-right: 0 !important;
+    }
+
+    .logoderechaMejora {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .contenedorImagenesMejora {
+        margin: auto;
+        text-align: center;
+        float: none;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .botonQuien {
+        margin: auto !important;
+        display: flex !important;
+        float: none;
+        /*margn-right: 50px;*/
+    }
+  }
+
+  .textoCenterSomosMejora{
+      padding-left: 15%;
+  }
+
+  .logo-outline-size{
+      width: 100%;
+      max-height: 310px;
+  }
+
+  .texto-body-mejora{
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 5vh;
+    padding: 20px;
+  }
+
+  .text-shade-m{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.btn-mejora{
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px !important;
+}
+
+.form-mejora-1{
+    padding-left: 5.5%;
+    padding-right: 2%;
+    height: 700px;
+}
+
+#necesito-estas-piezas{
+    resize: none;
+    overflow: auto;
+    height: 400px !important;
+} 
+
+#caracteristicas-equipo-tras-mejora{
+    resize: none;
+    overflow: auto;
+    height: 170px !important;
+}
+
+.file-path.validate.valid{
+    color: #fff !important;
+}
+
+input{
+    color: #fff;
+}

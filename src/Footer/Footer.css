@@ -23,7 +23,10 @@ footer.page-footer .container, footer.page-footer .footer-copyright{
     text-align: center
     ;
 }
-
+a{
+    color:inherit;
+    font-weight:bold;
+}
 body.business-background footer.page-footer{
     background: linear-gradient(298deg, #3092A9, #394E71) !important;
 }

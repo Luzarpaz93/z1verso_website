@@ -21,6 +21,7 @@ import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
 import WhatsappButtonSM from "./Social/WhatsAppButtonSM";
 import Footer from "./Footer/Footer";
+import AvisodePrivacidad from "./pages/Avisodeprivacidad";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           <Header />
           <Navbar />
           <Switch>
+          <Route path="/avisodeprivacidad">
+              <AvisodePrivacidad />
+            </Route>
             <Route path="/contacto">
               <Contacto />
             </Route>
