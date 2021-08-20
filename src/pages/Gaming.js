@@ -55,14 +55,10 @@ const Gaming = () => {
             
             <div className="col s12 m12 l12 no-padding no-margin">
               <span className="titulo-galeria slide-in-animate-right">
-                Galería
+                Equipos
               </span>
-              <img className="linea-galeria zoom-on-load" src={linea} />
-              <div className="container-img-galeria slide-in-animate-right">
-                <img className="rounded-img img-galeria-aside" src={galeria_1} />
-              </div>
-              <div className="container-img-galeria slide-in-animate-right">
-                <img className="rounded-img img-galeria-aside" src={galeria_3} />
+              <div class="embed-container">
+              <iframe src="https://res.cloudinary.com/djlajcfkh/video/upload/v1629487838/Video_6_2_e4s4co.mp4" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
             

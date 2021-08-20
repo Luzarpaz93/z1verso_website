@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+  import React, { useState, useEffect } from "react";
 import logo from "../Imagenes/logo2.png";
 import "../pages/mejora.css";
 import derecha1 from "../Imagenes/derecha1.png";
@@ -20,11 +20,10 @@ const Mejoratuequipo = () => {
 
   return (
     <div className="row">
-      <div className="col s12 m12 l12">
-        <img
-          src={logo_outline}
-          className="zoom-on-load center-block logo-outline-size"
-        />
+      <div className="col s12 m12 l12 mt3 contenedorVideo">
+      <div class="embed-container">
+          <iframe src="https://res.cloudinary.com/djlajcfkh/video/upload/v1629485748/Video_8_ck1czd_dioxxf.mp4" frameborder="0" allowfullscreen></iframe>
+          </div>
       </div>
       <div className="col s12 m12 l12">
         <div className="row">

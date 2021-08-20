@@ -57,15 +57,10 @@ const Creative = () => {
             
             <div className="col s12 m12 l12 no-padding">
               <span className="titulo-galeria slide-in-animate-right">
-                Galería
+                Equipos
               </span>
-              <img className="linea-galeria zoom-on-load" src={linea} />
-
-              <div className="container-img-galeria slide-in-animate-right">
-                <img className="rounded-img img-galeria-aside" src={galeria_2} />
-              </div>
-              <div className="container-img-galeria slide-in-animate-right">
-                <img className="rounded-img img-galeria-aside" src={galeria_8} />
+              <div class="embed-container">
+              <iframe src="https://res.cloudinary.com/djlajcfkh/video/upload/v1629487569/Video_16_1_hw2ed2.mp4" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
             
