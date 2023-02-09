@@ -17,8 +17,6 @@ import {
 import Navbar from "./Navbar/Navbar";
 import Header from "./sideBar/Header";
 import Sidebar from "./Navbar/Sidebar";
-import WhatsAppWidget from "react-whatsapp-widget";
-import "react-whatsapp-widget/dist/index.css";
 import WhatsappButtonSM from "./Social/WhatsAppButtonSM";
 import Footer from "./Footer/Footer";
 import AvisodePrivacidad from "./pages/Avisodeprivacidad";
